@@ -1,0 +1,278 @@
+\hypertarget{main_8cpp}{\section{main.\-cpp File Reference}
+\label{main_8cpp}\index{main.\-cpp@{main.\-cpp}}
+}
+{\ttfamily \#include \char`\"{}Client.\-h\char`\"{}}\\*
+{\ttfamily \#include $<$stdio.\-h$>$}\\*
+{\ttfamily \#include $<$string.\-h$>$}\\*
+{\ttfamily \#include $<$time.\-h$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$math.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/glew.\-h$>$}\\*
+{\ttfamily \#include $<$G\-L/\-G\-L.\-H$>$}\\*
+{\ttfamily \#include $<$G\-L/\-G\-L\-U.\-H$>$}\\*
+{\ttfamily \#include $<$G\-L/\-G\-L\-A\-U\-X.\-H$>$}\\*
+{\ttfamily \#include $<$G\-L/glut.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}lights.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}static\-Obj.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}key\-Strokes.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}camera.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}High\-Map.\-h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Menu\-G\-U\-I.\-h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{main_8cpp_aac028f4c15ac7f78a44be5db76cfbec7}{N\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-S}~1
+\item 
+\#define \hyperlink{main_8cpp_a32dab2958741954c553be53105ac70a9}{N\-U\-M\-\_\-\-S\-O\-U\-R\-C\-E\-S}~1
+\item 
+\#define \hyperlink{main_8cpp_a85b4ddbb99cefcce08dfbfd8dcd52877}{N\-U\-M\-\_\-\-E\-N\-V\-I\-R\-O\-N\-M\-E\-N\-T\-S}~1
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_ae602c9cb10b29252d59eb106aa724a69}{my\-Reshape} (G\-Lsizei w, G\-Lsizei h)
+\item 
+void \hyperlink{main_8cpp_a6c50dd118cbf2294271b117f5a776bc3}{sends} ()
+\item 
+void \hyperlink{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{display} ()
+\item 
+void \hyperlink{main_8cpp_ab5c5e41a17e048d746cecc4d6dfe2e75}{idle\-Func} ()
+\item 
+void \hyperlink{main_8cpp_a8d079dbe8fe6897f8930a45bacac842f}{exit\-Game} ()
+\item 
+void \hyperlink{main_8cpp_a672933c202c188ccadcd1b7f36ef4663}{play\-Sound} (void $\ast$)
+\item 
+void \hyperlink{main_8cpp_ac5e32e0fb7d725ddf9c5c74d8c222395}{mouse\-Control} (int button, int state, int x, int y)
+\item 
+void \hyperlink{main_8cpp_a5b7483fd46186ad84b2914ae6119dd57}{high\-Mapdependent\-Settings} ()
+\item 
+int \hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_static_obj}{Static\-Obj} $\ast$ \hyperlink{main_8cpp_a0e09ec3962d7a62d0222b5ff13ae978b}{objects}
+\item 
+bool \hyperlink{main_8cpp_a23ca8db2cebbfb94538122c439146f1a}{keys} \mbox{[}256\mbox{]}
+\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{main_8cpp_af95833c961e5bd20dcd54e1d46a03c0b}{camera}
+\item 
+\hyperlink{class_high_map}{High\-Map} $\ast$ \hyperlink{main_8cpp_ae36cd3b8d4b6a42eba613c3e46292449}{logic\-Map}
+\item 
+H\-A\-N\-D\-L\-E \hyperlink{main_8cpp_aa981b5c9e940a2600c115226d62278f0}{thread} \mbox{[}2\mbox{]}
+\item 
+\hyperlink{class_menu_g_u_i}{Menu\-G\-U\-I} $\ast$ \hyperlink{main_8cpp_a6aea26914519738c88afe0e4968dac26}{menu}
+\item 
+\hyperlink{class_main_character}{Main\-Character} $\ast$ \hyperlink{main_8cpp_ad65be51fc01e61958daeef91baa7292b}{main\-Character}
+\item 
+int \hyperlink{main_8cpp_aef9b6e96252c021538a6651c28822a06}{obj\-Nr\-\_\-edit}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{main_8cpp_a5ad9341902d06ecd9361d39bd4f64b82}{translate\-\_\-edit}
+\item 
+\hyperlink{class_client}{Client} $\ast$ \hyperlink{main_8cpp_a0388c33353644129ea9403f0a5a8ed24}{client}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{main_8cpp_aac028f4c15ac7f78a44be5db76cfbec7}{\index{main.\-cpp@{main.\-cpp}!N\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-S@{N\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-S}}
+\index{N\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-S@{N\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-S}!main.cpp@{main.\-cpp}}
+\subsubsection[{N\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-U\-M\-\_\-\-B\-U\-F\-F\-E\-R\-S~1}}\label{main_8cpp_aac028f4c15ac7f78a44be5db76cfbec7}
+
+
+Definition at line 47 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a85b4ddbb99cefcce08dfbfd8dcd52877}{\index{main.\-cpp@{main.\-cpp}!N\-U\-M\-\_\-\-E\-N\-V\-I\-R\-O\-N\-M\-E\-N\-T\-S@{N\-U\-M\-\_\-\-E\-N\-V\-I\-R\-O\-N\-M\-E\-N\-T\-S}}
+\index{N\-U\-M\-\_\-\-E\-N\-V\-I\-R\-O\-N\-M\-E\-N\-T\-S@{N\-U\-M\-\_\-\-E\-N\-V\-I\-R\-O\-N\-M\-E\-N\-T\-S}!main.cpp@{main.\-cpp}}
+\subsubsection[{N\-U\-M\-\_\-\-E\-N\-V\-I\-R\-O\-N\-M\-E\-N\-T\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-U\-M\-\_\-\-E\-N\-V\-I\-R\-O\-N\-M\-E\-N\-T\-S~1}}\label{main_8cpp_a85b4ddbb99cefcce08dfbfd8dcd52877}
+
+
+Definition at line 49 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a32dab2958741954c553be53105ac70a9}{\index{main.\-cpp@{main.\-cpp}!N\-U\-M\-\_\-\-S\-O\-U\-R\-C\-E\-S@{N\-U\-M\-\_\-\-S\-O\-U\-R\-C\-E\-S}}
+\index{N\-U\-M\-\_\-\-S\-O\-U\-R\-C\-E\-S@{N\-U\-M\-\_\-\-S\-O\-U\-R\-C\-E\-S}!main.cpp@{main.\-cpp}}
+\subsubsection[{N\-U\-M\-\_\-\-S\-O\-U\-R\-C\-E\-S}]{\setlength{\rightskip}{0pt plus 5cm}\#define N\-U\-M\-\_\-\-S\-O\-U\-R\-C\-E\-S~1}}\label{main_8cpp_a32dab2958741954c553be53105ac70a9}
+
+
+Definition at line 48 of file main.\-cpp.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}{\index{main.\-cpp@{main.\-cpp}!display@{display}}
+\index{display@{display}!main.cpp@{main.\-cpp}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a1e5b20fed15743656bb6d2e6a6ea6269}
+
+
+Definition at line 106 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a8d079dbe8fe6897f8930a45bacac842f}{\index{main.\-cpp@{main.\-cpp}!exit\-Game@{exit\-Game}}
+\index{exit\-Game@{exit\-Game}!main.cpp@{main.\-cpp}}
+\subsubsection[{exit\-Game}]{\setlength{\rightskip}{0pt plus 5cm}void exit\-Game (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a8d079dbe8fe6897f8930a45bacac842f}
+
+
+Definition at line 146 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a5b7483fd46186ad84b2914ae6119dd57}{\index{main.\-cpp@{main.\-cpp}!high\-Mapdependent\-Settings@{high\-Mapdependent\-Settings}}
+\index{high\-Mapdependent\-Settings@{high\-Mapdependent\-Settings}!main.cpp@{main.\-cpp}}
+\subsubsection[{high\-Mapdependent\-Settings}]{\setlength{\rightskip}{0pt plus 5cm}void high\-Mapdependent\-Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a5b7483fd46186ad84b2914ae6119dd57}
+
+
+Definition at line 171 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ab5c5e41a17e048d746cecc4d6dfe2e75}{\index{main.\-cpp@{main.\-cpp}!idle\-Func@{idle\-Func}}
+\index{idle\-Func@{idle\-Func}!main.cpp@{main.\-cpp}}
+\subsubsection[{idle\-Func}]{\setlength{\rightskip}{0pt plus 5cm}void idle\-Func (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_ab5c5e41a17e048d746cecc4d6dfe2e75}
+
+
+Definition at line 133 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{\index{main.\-cpp@{main.\-cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.\-cpp}}
+\subsubsection[{main}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$$\ast$}]{argv}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}
+
+
+Definition at line 185 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ac5e32e0fb7d725ddf9c5c74d8c222395}{\index{main.\-cpp@{main.\-cpp}!mouse\-Control@{mouse\-Control}}
+\index{mouse\-Control@{mouse\-Control}!main.cpp@{main.\-cpp}}
+\subsubsection[{mouse\-Control}]{\setlength{\rightskip}{0pt plus 5cm}void mouse\-Control (
+\begin{DoxyParamCaption}
+\item[{int}]{button, }
+\item[{int}]{state, }
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_ac5e32e0fb7d725ddf9c5c74d8c222395}
+
+
+Definition at line 160 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ae602c9cb10b29252d59eb106aa724a69}{\index{main.\-cpp@{main.\-cpp}!my\-Reshape@{my\-Reshape}}
+\index{my\-Reshape@{my\-Reshape}!main.cpp@{main.\-cpp}}
+\subsubsection[{my\-Reshape}]{\setlength{\rightskip}{0pt plus 5cm}void my\-Reshape (
+\begin{DoxyParamCaption}
+\item[{G\-Lsizei}]{w, }
+\item[{G\-Lsizei}]{h}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_ae602c9cb10b29252d59eb106aa724a69}
+
+
+Definition at line 64 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a672933c202c188ccadcd1b7f36ef4663}{\index{main.\-cpp@{main.\-cpp}!play\-Sound@{play\-Sound}}
+\index{play\-Sound@{play\-Sound}!main.cpp@{main.\-cpp}}
+\subsubsection[{play\-Sound}]{\setlength{\rightskip}{0pt plus 5cm}void play\-Sound (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a672933c202c188ccadcd1b7f36ef4663}
+
+
+Definition at line 155 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a6c50dd118cbf2294271b117f5a776bc3}{\index{main.\-cpp@{main.\-cpp}!sends@{sends}}
+\index{sends@{sends}!main.cpp@{main.\-cpp}}
+\subsubsection[{sends}]{\setlength{\rightskip}{0pt plus 5cm}void sends (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{main_8cpp_a6c50dd118cbf2294271b117f5a776bc3}
+
+
+Definition at line 76 of file main.\-cpp.
+
+
+
+\subsection{Variable Documentation}
+\hypertarget{main_8cpp_af95833c961e5bd20dcd54e1d46a03c0b}{\index{main.\-cpp@{main.\-cpp}!camera@{camera}}
+\index{camera@{camera}!main.cpp@{main.\-cpp}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera}$\ast$ camera}}\label{main_8cpp_af95833c961e5bd20dcd54e1d46a03c0b}
+
+
+Definition at line 53 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a0388c33353644129ea9403f0a5a8ed24}{\index{main.\-cpp@{main.\-cpp}!client@{client}}
+\index{client@{client}!main.cpp@{main.\-cpp}}
+\subsubsection[{client}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Client}$\ast$ client}}\label{main_8cpp_a0388c33353644129ea9403f0a5a8ed24}
+
+
+Definition at line 61 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a23ca8db2cebbfb94538122c439146f1a}{\index{main.\-cpp@{main.\-cpp}!keys@{keys}}
+\index{keys@{keys}!main.cpp@{main.\-cpp}}
+\subsubsection[{keys}]{\setlength{\rightskip}{0pt plus 5cm}bool keys\mbox{[}256\mbox{]}}}\label{main_8cpp_a23ca8db2cebbfb94538122c439146f1a}
+
+
+Definition at line 52 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ae36cd3b8d4b6a42eba613c3e46292449}{\index{main.\-cpp@{main.\-cpp}!logic\-Map@{logic\-Map}}
+\index{logic\-Map@{logic\-Map}!main.cpp@{main.\-cpp}}
+\subsubsection[{logic\-Map}]{\setlength{\rightskip}{0pt plus 5cm}{\bf High\-Map}$\ast$ logic\-Map}}\label{main_8cpp_ae36cd3b8d4b6a42eba613c3e46292449}
+
+
+Definition at line 54 of file main.\-cpp.
+
+\hypertarget{main_8cpp_ad65be51fc01e61958daeef91baa7292b}{\index{main.\-cpp@{main.\-cpp}!main\-Character@{main\-Character}}
+\index{main\-Character@{main\-Character}!main.cpp@{main.\-cpp}}
+\subsubsection[{main\-Character}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Main\-Character}$\ast$ main\-Character}}\label{main_8cpp_ad65be51fc01e61958daeef91baa7292b}
+
+
+Definition at line 57 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a6aea26914519738c88afe0e4968dac26}{\index{main.\-cpp@{main.\-cpp}!menu@{menu}}
+\index{menu@{menu}!main.cpp@{main.\-cpp}}
+\subsubsection[{menu}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Menu\-G\-U\-I}$\ast$ menu}}\label{main_8cpp_a6aea26914519738c88afe0e4968dac26}
+
+
+Definition at line 56 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a0e09ec3962d7a62d0222b5ff13ae978b}{\index{main.\-cpp@{main.\-cpp}!objects@{objects}}
+\index{objects@{objects}!main.cpp@{main.\-cpp}}
+\subsubsection[{objects}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Static\-Obj} $\ast$ objects}}\label{main_8cpp_a0e09ec3962d7a62d0222b5ff13ae978b}
+
+
+Definition at line 51 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aef9b6e96252c021538a6651c28822a06}{\index{main.\-cpp@{main.\-cpp}!obj\-Nr\-\_\-edit@{obj\-Nr\-\_\-edit}}
+\index{obj\-Nr\-\_\-edit@{obj\-Nr\-\_\-edit}!main.cpp@{main.\-cpp}}
+\subsubsection[{obj\-Nr\-\_\-edit}]{\setlength{\rightskip}{0pt plus 5cm}int obj\-Nr\-\_\-edit}}\label{main_8cpp_aef9b6e96252c021538a6651c28822a06}
+
+
+Definition at line 59 of file main.\-cpp.
+
+\hypertarget{main_8cpp_aa981b5c9e940a2600c115226d62278f0}{\index{main.\-cpp@{main.\-cpp}!thread@{thread}}
+\index{thread@{thread}!main.cpp@{main.\-cpp}}
+\subsubsection[{thread}]{\setlength{\rightskip}{0pt plus 5cm}H\-A\-N\-D\-L\-E thread\mbox{[}2\mbox{]}}}\label{main_8cpp_aa981b5c9e940a2600c115226d62278f0}
+
+
+Definition at line 55 of file main.\-cpp.
+
+\hypertarget{main_8cpp_a5ad9341902d06ecd9361d39bd4f64b82}{\index{main.\-cpp@{main.\-cpp}!translate\-\_\-edit@{translate\-\_\-edit}}
+\index{translate\-\_\-edit@{translate\-\_\-edit}!main.cpp@{main.\-cpp}}
+\subsubsection[{translate\-\_\-edit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} translate\-\_\-edit}}\label{main_8cpp_a5ad9341902d06ecd9361d39bd4f64b82}
+
+
+Definition at line 60 of file main.\-cpp.
+

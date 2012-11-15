@@ -1,0 +1,433 @@
+\hypertarget{struct_vector3}{\section{Vector3 Struct Reference}
+\label{struct_vector3}\index{Vector3@{Vector3}}
+}
+
+
+{\ttfamily \#include $<$Comp\-Core.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_vector3_ad53e22b52babdb90d423601f72467590}{Vector3} (float \hyperlink{struct_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}{x}, float \hyperlink{struct_vector3_a86eb35a9fa2d5a49e7fad66a35fa9c13}{y}, float \hyperlink{struct_vector3_aa8c9461eb24bd2c364258078811a3e9d}{z})
+\item 
+\hyperlink{struct_vector3_a0f49191f7e001e7f7ae1cb49522118b4}{Vector3} ()
+\item 
+\hyperlink{struct_vector3_a5545e13e2e2861ece8f14b12a6a8101f}{$\sim$\-Vector3} ()
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{struct_vector3_a6c1adee4e0d030153b6fd610897809c9}{operator+} (\hyperlink{struct_vector3}{Vector3} \&\hyperlink{struct_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}{x})
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{struct_vector3_a7ee2ab8be82ace8b8fca9e8dbb9d57af}{operator-\/} (\hyperlink{struct_vector3}{Vector3} \&\hyperlink{struct_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}{x})
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{struct_vector3_af70aac6ee8f570fcf6354288afcbba34}{operator/} (float \&m)
+\begin{DoxyCompactList}\small\item\em Imparte fiecare element al vetorului la. \end{DoxyCompactList}\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{struct_vector3_a6e87944da5592f2649163d573873d758}{operator$\ast$} (float \&m)
+\begin{DoxyCompactList}\small\item\em multiplica fiecare element al vectorului cu m \end{DoxyCompactList}\item 
+float \hyperlink{struct_vector3_ac99f99d41cfbc35d7be65e0a7469ff79}{get\-Dist} (\hyperlink{struct_vector3}{Vector3} \&a)
+\begin{DoxyCompactList}\small\item\em Afla distanta intre vectorul implicit si. \end{DoxyCompactList}\item 
+virtual bool \hyperlink{struct_vector3_a065da1e1e6164259fc296a197aa4ea1e}{is\-Valid} ()
+\begin{DoxyCompactList}\small\item\em Am convenit ca vectorul cu primul element -\/1 sa fie invalid metoda returneaza true daca elementul e valid false altfel. \end{DoxyCompactList}\item 
+bool \hyperlink{struct_vector3_aecd46e467c12a408b98885faaa453c29}{is\-Inside} (\hyperlink{struct_vector3}{Vector3} \&a, \hyperlink{struct_vector3}{Vector3} \&b)
+\begin{DoxyCompactList}\small\item\em Spne daca toate coordonatele vectorului curent sunt intre coordonatele celor 2 vectori. \end{DoxyCompactList}\item 
+void \hyperlink{struct_vector3_aa2d4b629b2d1260a49a88bd98c48934a}{print} ()
+\begin{DoxyCompactList}\small\item\em utilizata pentru Debugging, afiseaza coordonatele punctului curent. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{struct_vector3_a19c258342bd0c27ddcd7e079d6d38b5f}{translate} (\hyperlink{struct_vector3}{Vector3} point)
+\begin{DoxyCompactList}\small\item\em apeleaza functia gl\-Translatef cu parametrii vectorului {\bfseries point} \end{DoxyCompactList}\item 
+static void \hyperlink{struct_vector3_a55239686f46937c64fec068f52a4d5b6}{rotate} (\hyperlink{struct_vector3}{Vector3} point, float angle)
+\begin{DoxyCompactList}\small\item\em Apeleaza gl\-Rotatef cu quaternion-\/ul. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_vector3_a31279b5d53f5cf4f36f8a02ba826844b}{scale} (\hyperlink{struct_vector3}{Vector3} point)
+\begin{DoxyCompactList}\small\item\em apeleaza functia gl\-Scalef cu parametrii \end{DoxyCompactList}\item 
+static void \hyperlink{struct_vector3_a44b36db62c048090ee7b7eef7ce4ba3e}{translate\-Back} (\hyperlink{struct_vector3}{Vector3} point)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_face}{Face} miscare de translatie inversa pentru. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_vector3_a7fcc44e050a023b53c0745e6d7068019}{rotate\-Back} (\hyperlink{struct_vector3}{Vector3} point, float angle)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_face}{Face} rotatia inversa pentru quaternionul. \end{DoxyCompactList}\item 
+static void \hyperlink{struct_vector3_a5a586e78bef39b3f2d22e30883aab5cb}{scale\-Back} (\hyperlink{struct_vector3}{Vector3} point)
+\begin{DoxyCompactList}\small\item\em \hyperlink{struct_face}{Face} scalarea inversa pentru. \end{DoxyCompactList}\item 
+static float \hyperlink{struct_vector3_a8b6eff7231a5595aafe938e1362de1ff}{get\-Dist} (\hyperlink{struct_vector3}{Vector3} \&a, \hyperlink{struct_vector3}{Vector3} \&b)
+\begin{DoxyCompactList}\small\item\em calculeaza distanta intre 2 puncte in spatiu \end{DoxyCompactList}\item 
+static \hyperlink{struct_vector3}{Vector3} \hyperlink{struct_vector3_a5dffe84d05c294364300dfd5a6ac6eee}{invalid\-Point} ()
+\begin{DoxyCompactList}\small\item\em Returneaza vectorul invalid conform \char`\"{}intelegerii\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{struct_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}{x}
+\item 
+float \hyperlink{struct_vector3_a86eb35a9fa2d5a49e7fad66a35fa9c13}{y}
+\item 
+float \hyperlink{struct_vector3_aa8c9461eb24bd2c364258078811a3e9d}{z}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+care reprezinta un punct in spatiul 3d 
+
+Definition at line 20 of file Comp\-Core.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_vector3_ad53e22b52babdb90d423601f72467590}{\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection[{Vector3}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\-::\-Vector3 (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{y, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_ad53e22b52babdb90d423601f72467590}
+
+
+Definition at line 3 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a0f49191f7e001e7f7ae1cb49522118b4}{\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\index{Vector3@{Vector3}!Vector3@{Vector3}}
+\subsubsection[{Vector3}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\-::\-Vector3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_a0f49191f7e001e7f7ae1cb49522118b4}
+
+
+Definition at line 10 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a5545e13e2e2861ece8f14b12a6a8101f}{\index{Vector3@{Vector3}!$\sim$\-Vector3@{$\sim$\-Vector3}}
+\index{$\sim$\-Vector3@{$\sim$\-Vector3}!Vector3@{Vector3}}
+\subsubsection[{$\sim$\-Vector3}]{\setlength{\rightskip}{0pt plus 5cm}Vector3\-::$\sim$\-Vector3 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_a5545e13e2e2861ece8f14b12a6a8101f}
+
+
+Definition at line 17 of file Comp\-Core.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{struct_vector3_ac99f99d41cfbc35d7be65e0a7469ff79}{\index{Vector3@{Vector3}!get\-Dist@{get\-Dist}}
+\index{get\-Dist@{get\-Dist}!Vector3@{Vector3}}
+\subsubsection[{get\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\-::get\-Dist (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{a}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_ac99f99d41cfbc35d7be65e0a7469ff79}
+
+
+Afla distanta intre vectorul implicit si. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 86 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a8b6eff7231a5595aafe938e1362de1ff}{\index{Vector3@{Vector3}!get\-Dist@{get\-Dist}}
+\index{get\-Dist@{get\-Dist}!Vector3@{Vector3}}
+\subsubsection[{get\-Dist}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\-::get\-Dist (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{a, }
+\item[{{\bf Vector3} \&}]{b}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a8b6eff7231a5595aafe938e1362de1ff}
+
+
+calculeaza distanta intre 2 puncte in spatiu 
+
+
+
+Definition at line 91 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a5dffe84d05c294364300dfd5a6ac6eee}{\index{Vector3@{Vector3}!invalid\-Point@{invalid\-Point}}
+\index{invalid\-Point@{invalid\-Point}!Vector3@{Vector3}}
+\subsubsection[{invalid\-Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\-::invalid\-Point (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a5dffe84d05c294364300dfd5a6ac6eee}
+
+
+Returneaza vectorul invalid conform \char`\"{}intelegerii\char`\"{}. 
+
+\begin{DoxyAttention}{Attention}
+Trebuie avut grija la intervalul vectorilor valizi sa nu se suprapuna peste vectorul invalid 
+\end{DoxyAttention}
+
+
+Definition at line 96 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_aecd46e467c12a408b98885faaa453c29}{\index{Vector3@{Vector3}!is\-Inside@{is\-Inside}}
+\index{is\-Inside@{is\-Inside}!Vector3@{Vector3}}
+\subsubsection[{is\-Inside}]{\setlength{\rightskip}{0pt plus 5cm}bool Vector3\-::is\-Inside (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{a, }
+\item[{{\bf Vector3} \&}]{b}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_aecd46e467c12a408b98885faaa453c29}
+
+
+Spne daca toate coordonatele vectorului curent sunt intre coordonatele celor 2 vectori. 
+
+
+
+Definition at line 105 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a065da1e1e6164259fc296a197aa4ea1e}{\index{Vector3@{Vector3}!is\-Valid@{is\-Valid}}
+\index{is\-Valid@{is\-Valid}!Vector3@{Vector3}}
+\subsubsection[{is\-Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool Vector3\-::is\-Valid (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{struct_vector3_a065da1e1e6164259fc296a197aa4ea1e}
+
+
+Am convenit ca vectorul cu primul element -\/1 sa fie invalid metoda returneaza true daca elementul e valid false altfel. 
+
+
+
+Definition at line 116 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a6e87944da5592f2649163d573873d758}{\index{Vector3@{Vector3}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Vector3@{Vector3}}
+\subsubsection[{operator$\ast$}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\-::operator$\ast$ (
+\begin{DoxyParamCaption}
+\item[{float \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_a6e87944da5592f2649163d573873d758}
+
+
+multiplica fiecare element al vectorului cu m 
+
+
+
+Definition at line 48 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a6c1adee4e0d030153b6fd610897809c9}{\index{Vector3@{Vector3}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector3@{Vector3}}
+\subsubsection[{operator+}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\-::operator+ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_a6c1adee4e0d030153b6fd610897809c9}
+\begin{DoxyReturn}{Returns}
+Va insuma elementele vectorilor. (a1, b1, c1) + (a2, b2, c2) = (a1+a2, b1+b2, c1+c2) 
+\end{DoxyReturn}
+
+
+Definition at line 21 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a7ee2ab8be82ace8b8fca9e8dbb9d57af}{\index{Vector3@{Vector3}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector3@{Vector3}}
+\subsubsection[{operator-\/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\-::operator-\/ (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{x}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_a7ee2ab8be82ace8b8fca9e8dbb9d57af}
+\begin{DoxyReturn}{Returns}
+The answer will be the difference of the two vectors (a1, b1, c1) -\/ (a2, b2, c2) = (a1-\/a2, b1-\/b2, c1-\/c2) 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_af70aac6ee8f570fcf6354288afcbba34}{\index{Vector3@{Vector3}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector3@{Vector3}}
+\subsubsection[{operator/}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Vector3\-::operator/ (
+\begin{DoxyParamCaption}
+\item[{float \&}]{m}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_af70aac6ee8f570fcf6354288afcbba34}
+
+
+Imparte fiecare element al vetorului la. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_aa2d4b629b2d1260a49a88bd98c48934a}{\index{Vector3@{Vector3}!print@{print}}
+\index{print@{print}!Vector3@{Vector3}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Vector3\-::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_vector3_aa2d4b629b2d1260a49a88bd98c48934a}
+
+
+utilizata pentru Debugging, afiseaza coordonatele punctului curent. 
+
+\begin{DoxyAttention}{Attention}
+Desenarea pe ecran nu este testata 
+\end{DoxyAttention}
+
+
+Definition at line 123 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a55239686f46937c64fec068f52a4d5b6}{\index{Vector3@{Vector3}!rotate@{rotate}}
+\index{rotate@{rotate}!Vector3@{Vector3}}
+\subsubsection[{rotate}]{\setlength{\rightskip}{0pt plus 5cm}void Vector3\-::rotate (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{point, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a55239686f46937c64fec068f52a4d5b6}
+
+
+Apeleaza gl\-Rotatef cu quaternion-\/ul. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & si \\
+\hline
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 61 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a7fcc44e050a023b53c0745e6d7068019}{\index{Vector3@{Vector3}!rotate\-Back@{rotate\-Back}}
+\index{rotate\-Back@{rotate\-Back}!Vector3@{Vector3}}
+\subsubsection[{rotate\-Back}]{\setlength{\rightskip}{0pt plus 5cm}void Vector3\-::rotate\-Back (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{point, }
+\item[{float}]{angle}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a7fcc44e050a023b53c0745e6d7068019}
+
+
+\hyperlink{struct_face}{Face} rotatia inversa pentru quaternionul. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & si \\
+\hline
+{\em angle} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 76 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a31279b5d53f5cf4f36f8a02ba826844b}{\index{Vector3@{Vector3}!scale@{scale}}
+\index{scale@{scale}!Vector3@{Vector3}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}void Vector3\-::scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a31279b5d53f5cf4f36f8a02ba826844b}
+
+
+apeleaza functia gl\-Scalef cu parametrii 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyAttention}{Attention}
+Nu e testata! 
+\end{DoxyAttention}
+
+
+Definition at line 66 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a5a586e78bef39b3f2d22e30883aab5cb}{\index{Vector3@{Vector3}!scale\-Back@{scale\-Back}}
+\index{scale\-Back@{scale\-Back}!Vector3@{Vector3}}
+\subsubsection[{scale\-Back}]{\setlength{\rightskip}{0pt plus 5cm}void Vector3\-::scale\-Back (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a5a586e78bef39b3f2d22e30883aab5cb}
+
+
+\hyperlink{struct_face}{Face} scalarea inversa pentru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 81 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a19c258342bd0c27ddcd7e079d6d38b5f}{\index{Vector3@{Vector3}!translate@{translate}}
+\index{translate@{translate}!Vector3@{Vector3}}
+\subsubsection[{translate}]{\setlength{\rightskip}{0pt plus 5cm}void Vector3\-::translate (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a19c258342bd0c27ddcd7e079d6d38b5f}
+
+
+apeleaza functia gl\-Translatef cu parametrii vectorului {\bfseries point} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_vector3_a44b36db62c048090ee7b7eef7ce4ba3e}{\index{Vector3@{Vector3}!translate\-Back@{translate\-Back}}
+\index{translate\-Back@{translate\-Back}!Vector3@{Vector3}}
+\subsubsection[{translate\-Back}]{\setlength{\rightskip}{0pt plus 5cm}void Vector3\-::translate\-Back (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3}}]{point}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{struct_vector3_a44b36db62c048090ee7b7eef7ce4ba3e}
+
+
+\hyperlink{struct_face}{Face} miscare de translatie inversa pentru. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 71 of file Comp\-Core.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}{\index{Vector3@{Vector3}!x@{x}}
+\index{x@{x}!Vector3@{Vector3}}
+\subsubsection[{x}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\-::x}}\label{struct_vector3_a7e2d3237b29a2f29d7b3d8b2934e35f2}
+
+
+Definition at line 21 of file Comp\-Core.\-h.
+
+\hypertarget{struct_vector3_a86eb35a9fa2d5a49e7fad66a35fa9c13}{\index{Vector3@{Vector3}!y@{y}}
+\index{y@{y}!Vector3@{Vector3}}
+\subsubsection[{y}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\-::y}}\label{struct_vector3_a86eb35a9fa2d5a49e7fad66a35fa9c13}
+
+
+Definition at line 21 of file Comp\-Core.\-h.
+
+\hypertarget{struct_vector3_aa8c9461eb24bd2c364258078811a3e9d}{\index{Vector3@{Vector3}!z@{z}}
+\index{z@{z}!Vector3@{Vector3}}
+\subsubsection[{z}]{\setlength{\rightskip}{0pt plus 5cm}float Vector3\-::z}}\label{struct_vector3_aa8c9461eb24bd2c364258078811a3e9d}
+
+
+Definition at line 21 of file Comp\-Core.\-h.
+
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_comp_core_8h}{Comp\-Core.\-h}\item 
+\hyperlink{_comp_core_8cpp}{Comp\-Core.\-cpp}\end{DoxyCompactItemize}

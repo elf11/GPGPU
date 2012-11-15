@@ -1,0 +1,154 @@
+\hypertarget{class_mesh_animation}{\section{Mesh\-Animation Class Reference}
+\label{class_mesh_animation}\index{Mesh\-Animation@{Mesh\-Animation}}
+}
+
+
+{\ttfamily \#include $<$static\-Obj.\-h$>$}
+
+Inheritance diagram for Mesh\-Animation\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mesh_animation}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_mesh_animation_a567a0c3da9b6ab4f8731ca9a2d292122}{Mesh\-Animation} (const char $\ast$filename, int frame\-\_\-no)
+\item 
+\hyperlink{class_mesh_animation_ab5b3efcd554bf01b8fd04120fc93c8df}{$\sim$\-Mesh\-Animation} ()
+\item 
+virtual void \hyperlink{class_mesh_animation_ae64ddb4d27ebb9d64fe11b2e3143754e}{render} (std\-::vector$<$ \hyperlink{structobject}{object} $>$ \&comp, float $\ast$buffer, float $\ast$restore\-\_\-buffer)
+\begin{DoxyCompactList}\small\item\em Deseneaza frame-\/ul corect al animatiei. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{structobject}{object} $>$ \hyperlink{class_mesh_animation_a925b14f1959e8978bf2381cae04faddc}{frames}
+\item 
+std\-::vector$<$ \hyperlink{struct_move}{Move} $>$ \hyperlink{class_mesh_animation_a143c0f0b32676ba0cc63c5596f129b21}{moves}
+\item 
+int \hyperlink{class_mesh_animation_a38be50473060fbf1433104c3ebf4dda6}{current\-\_\-frame\-\_\-no}
+\item 
+\hyperlink{struct_move}{Move} \hyperlink{class_mesh_animation_a0e99877081ae52a2b74d890a346a5298}{current\-\_\-move}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+obiect animat 
+
+Definition at line 83 of file static\-Obj.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_mesh_animation_a567a0c3da9b6ab4f8731ca9a2d292122}{\index{Mesh\-Animation@{Mesh\-Animation}!Mesh\-Animation@{Mesh\-Animation}}
+\index{Mesh\-Animation@{Mesh\-Animation}!MeshAnimation@{Mesh\-Animation}}
+\subsubsection[{Mesh\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}Mesh\-Animation\-::\-Mesh\-Animation (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{int}]{frame\-\_\-no}
+\end{DoxyParamCaption}
+)}}\label{class_mesh_animation_a567a0c3da9b6ab4f8731ca9a2d292122}
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ prefix-\/ul din nume comun tuturor frame-\/urilor Frame-\/urile sunt citite din fisiere .obj \\
+\hline
+{\em frame-\/no} & -\/ numarul de frame-\/uri \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 307 of file static\-Obj.\-cpp.
+
+\hypertarget{class_mesh_animation_ab5b3efcd554bf01b8fd04120fc93c8df}{\index{Mesh\-Animation@{Mesh\-Animation}!$\sim$\-Mesh\-Animation@{$\sim$\-Mesh\-Animation}}
+\index{$\sim$\-Mesh\-Animation@{$\sim$\-Mesh\-Animation}!MeshAnimation@{Mesh\-Animation}}
+\subsubsection[{$\sim$\-Mesh\-Animation}]{\setlength{\rightskip}{0pt plus 5cm}Mesh\-Animation\-::$\sim$\-Mesh\-Animation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_mesh_animation_ab5b3efcd554bf01b8fd04120fc93c8df}
+
+
+Definition at line 337 of file static\-Obj.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_mesh_animation_ae64ddb4d27ebb9d64fe11b2e3143754e}{\index{Mesh\-Animation@{Mesh\-Animation}!render@{render}}
+\index{render@{render}!MeshAnimation@{Mesh\-Animation}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Mesh\-Animation\-::render (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf object} $>$ \&}]{comp, }
+\item[{float $\ast$}]{buffer, }
+\item[{float $\ast$}]{restore\-\_\-buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_mesh_animation_ae64ddb4d27ebb9d64fe11b2e3143754e}
+
+
+Deseneaza frame-\/ul corect al animatiei. 
+
+
+
+Reimplemented in \hyperlink{class_main_character_adf0f10646b7e00949b7a594cbc161c64}{Main\-Character}.
+
+
+
+Definition at line 341 of file static\-Obj.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_mesh_animation_a38be50473060fbf1433104c3ebf4dda6}{\index{Mesh\-Animation@{Mesh\-Animation}!current\-\_\-frame\-\_\-no@{current\-\_\-frame\-\_\-no}}
+\index{current\-\_\-frame\-\_\-no@{current\-\_\-frame\-\_\-no}!MeshAnimation@{Mesh\-Animation}}
+\subsubsection[{current\-\_\-frame\-\_\-no}]{\setlength{\rightskip}{0pt plus 5cm}int Mesh\-Animation\-::current\-\_\-frame\-\_\-no}}\label{class_mesh_animation_a38be50473060fbf1433104c3ebf4dda6}
+
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-frame\-\_\-no} & -\/ frame-\/ul curent la care se afla animatia in cadrul miscarii \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 100 of file static\-Obj.\-h.
+
+\hypertarget{class_mesh_animation_a0e99877081ae52a2b74d890a346a5298}{\index{Mesh\-Animation@{Mesh\-Animation}!current\-\_\-move@{current\-\_\-move}}
+\index{current\-\_\-move@{current\-\_\-move}!MeshAnimation@{Mesh\-Animation}}
+\subsubsection[{current\-\_\-move}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Move} Mesh\-Animation\-::current\-\_\-move}}\label{class_mesh_animation_a0e99877081ae52a2b74d890a346a5298}
+
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-move} & -\/ miscara curenta a animatiei \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 105 of file static\-Obj.\-h.
+
+\hypertarget{class_mesh_animation_a925b14f1959e8978bf2381cae04faddc}{\index{Mesh\-Animation@{Mesh\-Animation}!frames@{frames}}
+\index{frames@{frames}!MeshAnimation@{Mesh\-Animation}}
+\subsubsection[{frames}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf object}$>$ Mesh\-Animation\-::frames}}\label{class_mesh_animation_a925b14f1959e8978bf2381cae04faddc}
+
+\begin{DoxyParams}{Parameters}
+{\em este} & un vector de mesh-\/uri care reprezinta frame-\/urile \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 89 of file static\-Obj.\-h.
+
+\hypertarget{class_mesh_animation_a143c0f0b32676ba0cc63c5596f129b21}{\index{Mesh\-Animation@{Mesh\-Animation}!moves@{moves}}
+\index{moves@{moves}!MeshAnimation@{Mesh\-Animation}}
+\subsubsection[{moves}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Move}$>$ Mesh\-Animation\-::moves}}\label{class_mesh_animation_a143c0f0b32676ba0cc63c5596f129b21}
+
+\begin{DoxyParams}{Parameters}
+{\em moves} & este vectorul cu miscarile disponibile \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 94 of file static\-Obj.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{static_obj_8h}{static\-Obj.\-h}\item 
+\hyperlink{static_obj_8cpp}{static\-Obj.\-cpp}\end{DoxyCompactItemize}

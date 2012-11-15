@@ -1,0 +1,354 @@
+\hypertarget{class_camera}{\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+}
+
+
+{\ttfamily \#include $<$camera.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_a01f94c3543f56ede7af49dc778f19331}{Camera} ()
+\begin{DoxyCompactList}\small\item\em Initializarea camerei se face la pozitia (0, 0, 0) cu rotatie (0, 0, 0) si scale(1, 1, 1) \end{DoxyCompactList}\item 
+\hyperlink{class_camera_ad1897942d0ccf91052386388a497349f}{$\sim$\-Camera} ()
+\item 
+void \hyperlink{class_camera_a73ccd8097845e13876fc693c5e614d90}{set\-Translation} (\hyperlink{struct_vector3}{Vector3} \&point)
+\begin{DoxyCompactList}\small\item\em Schimba pozitia la pozitia {\bfseries new\-Point} \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_aba9df9fb2129b591d26bb5419318355d}{set\-Rotation} (\hyperlink{struct_vector3}{Vector3} \&new\-Axis)
+\begin{DoxyCompactList}\small\item\em Schimba vectorul in jurul careia se desfasoara rotatia la vectorul new\-Axis, ar fi o idee buna sa primeasca ca parametru un quaternion. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_ac6edf32fdd18fbd064255beefc9ceca2}{set\-Scale} (\hyperlink{struct_vector3}{Vector3} \&new\-Size)
+\begin{DoxyCompactList}\small\item\em Seteaza scalarea la dimensiunile new\-Size  Netestata! \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a8d10ea5b8790919325234395c7b04a6f}{move\-Forward} (float step)
+\begin{DoxyCompactList}\small\item\em Muta camera inainte oricare ar fi orientarea acesteia. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a2a687c711d5f46a6c9de4513c4e334cc}{move\-Backward} (float step)
+\begin{DoxyCompactList}\small\item\em Muta camera inapoi oricare ar fi orientarea acesteia. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a9733e299c281288208e4ce36681143a6}{move\-Left} (float step)
+\begin{DoxyCompactList}\small\item\em Muta camera spre stanga oricare ar fi orientarea acesteia. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a70f638369d8bbcb60639f5b1cc40de19}{move\-Right} (float step)
+\begin{DoxyCompactList}\small\item\em Muta camera spre dreapta oricare ar fi orientarea acesteia. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a61e15d0587412375261ca39de2f4776b}{rotate\-Left} (float step)
+\begin{DoxyCompactList}\small\item\em Roteste camera spre stanga. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a149d10b600ac1d5b91430cdf9a3dae7d}{rotate\-Right} (float step)
+\begin{DoxyCompactList}\small\item\em Roteste camera spre dreapta. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a5499e626fe539645aa4831369e93851a}{make\-Move} () const 
+\begin{DoxyCompactList}\small\item\em Efectueaza mutarea dupa metoda rotate-\/translate. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_aeb07ceb5fc0f41709f3fdfa13c87252c}{make\-Rotation} () const 
+\begin{DoxyCompactList}\small\item\em Efecturaza rotatia in jurul axei oy. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_aa2d535ba7952ee33c37e84461d57f1c2}{make\-Translation} () const 
+\begin{DoxyCompactList}\small\item\em Efectueaza translatia camerei. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a02be8aa0dbef77e02dddc715a726fb67}{reset} ()
+\begin{DoxyCompactList}\small\item\em Reseteaza pozitia camerei la cea initiala. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_camera_a303cfefa7f5d925e911000cf3fbdfd39}{get\-Position} ()
+\begin{DoxyCompactList}\small\item\em Seteaza inaltimea la care se gaseste camera conform high\-Map-\/ului Nu functioneaza foarte bine T\-O\-D\-O -\/ analizat bug-\/uri. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{class_camera_ad86bc5edaaf030fa76edac96040e56f4}{translation}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{class_camera_a49d1e42b190a89485c29b6a0bd0fb19b}{rotation}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{class_camera_a048f3227386a7874d82d5a955eab803c}{scale}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{class_camera_aa2e21e07158e70c900e1a8473b4e96d7}{undo\-\_\-translation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_camera}{Camera} -\/ \hyperlink{class_clasa}{Clasa} care reprezinta camera controlata de utilizator Foloseste metoda rotate-\/translate nu gl\-Look\-At, in contextul curent este discutabila schimbarea implementarii, dar este foarte probabil ca ar duce la un rezultat bun 
+
+Definition at line 19 of file camera.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_camera_a01f94c3543f56ede7af49dc778f19331}{\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection[{Camera}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-::\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a01f94c3543f56ede7af49dc778f19331}
+
+
+Initializarea camerei se face la pozitia (0, 0, 0) cu rotatie (0, 0, 0) si scale(1, 1, 1) 
+
+
+
+Definition at line 6 of file camera.\-cpp.
+
+\hypertarget{class_camera_ad1897942d0ccf91052386388a497349f}{\index{Camera@{Camera}!$\sim$\-Camera@{$\sim$\-Camera}}
+\index{$\sim$\-Camera@{$\sim$\-Camera}!Camera@{Camera}}
+\subsubsection[{$\sim$\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}Camera\-::$\sim$\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_camera_ad1897942d0ccf91052386388a497349f}
+
+
+Definition at line 13 of file camera.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_camera_a303cfefa7f5d925e911000cf3fbdfd39}{\index{Camera@{Camera}!get\-Position@{get\-Position}}
+\index{get\-Position@{get\-Position}!Camera@{Camera}}
+\subsubsection[{get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_camera_a303cfefa7f5d925e911000cf3fbdfd39}
+
+
+Seteaza inaltimea la care se gaseste camera conform high\-Map-\/ului Nu functioneaza foarte bine T\-O\-D\-O -\/ analizat bug-\/uri. 
+
+
+
+Definition at line 95 of file camera.\-cpp.
+
+\hypertarget{class_camera_a5499e626fe539645aa4831369e93851a}{\index{Camera@{Camera}!make\-Move@{make\-Move}}
+\index{make\-Move@{make\-Move}!Camera@{Camera}}
+\subsubsection[{make\-Move}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::make\-Move (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_camera_a5499e626fe539645aa4831369e93851a}
+
+
+Efectueaza mutarea dupa metoda rotate-\/translate. 
+
+
+
+Definition at line 91 of file camera.\-h.
+
+\hypertarget{class_camera_aeb07ceb5fc0f41709f3fdfa13c87252c}{\index{Camera@{Camera}!make\-Rotation@{make\-Rotation}}
+\index{make\-Rotation@{make\-Rotation}!Camera@{Camera}}
+\subsubsection[{make\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::make\-Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_camera_aeb07ceb5fc0f41709f3fdfa13c87252c}
+
+
+Efecturaza rotatia in jurul axei oy. 
+
+
+
+Definition at line 100 of file camera.\-h.
+
+\hypertarget{class_camera_aa2d535ba7952ee33c37e84461d57f1c2}{\index{Camera@{Camera}!make\-Translation@{make\-Translation}}
+\index{make\-Translation@{make\-Translation}!Camera@{Camera}}
+\subsubsection[{make\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::make\-Translation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_camera_aa2d535ba7952ee33c37e84461d57f1c2}
+
+
+Efectueaza translatia camerei. 
+
+
+
+Definition at line 105 of file camera.\-h.
+
+\hypertarget{class_camera_a2a687c711d5f46a6c9de4513c4e334cc}{\index{Camera@{Camera}!move\-Backward@{move\-Backward}}
+\index{move\-Backward@{move\-Backward}!Camera@{Camera}}
+\subsubsection[{move\-Backward}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::move\-Backward (
+\begin{DoxyParamCaption}
+\item[{float}]{step}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a2a687c711d5f46a6c9de4513c4e334cc}
+
+
+Muta camera inapoi oricare ar fi orientarea acesteia. 
+
+
+
+Definition at line 45 of file camera.\-cpp.
+
+\hypertarget{class_camera_a8d10ea5b8790919325234395c7b04a6f}{\index{Camera@{Camera}!move\-Forward@{move\-Forward}}
+\index{move\-Forward@{move\-Forward}!Camera@{Camera}}
+\subsubsection[{move\-Forward}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::move\-Forward (
+\begin{DoxyParamCaption}
+\item[{float}]{step}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a8d10ea5b8790919325234395c7b04a6f}
+
+
+Muta camera inainte oricare ar fi orientarea acesteia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em step} & Distanta pe care se face avansarea \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 38 of file camera.\-cpp.
+
+\hypertarget{class_camera_a9733e299c281288208e4ce36681143a6}{\index{Camera@{Camera}!move\-Left@{move\-Left}}
+\index{move\-Left@{move\-Left}!Camera@{Camera}}
+\subsubsection[{move\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::move\-Left (
+\begin{DoxyParamCaption}
+\item[{float}]{step}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a9733e299c281288208e4ce36681143a6}
+
+
+Muta camera spre stanga oricare ar fi orientarea acesteia. 
+
+
+
+Definition at line 52 of file camera.\-cpp.
+
+\hypertarget{class_camera_a70f638369d8bbcb60639f5b1cc40de19}{\index{Camera@{Camera}!move\-Right@{move\-Right}}
+\index{move\-Right@{move\-Right}!Camera@{Camera}}
+\subsubsection[{move\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::move\-Right (
+\begin{DoxyParamCaption}
+\item[{float}]{step}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a70f638369d8bbcb60639f5b1cc40de19}
+
+
+Muta camera spre dreapta oricare ar fi orientarea acesteia. 
+
+
+
+Definition at line 59 of file camera.\-cpp.
+
+\hypertarget{class_camera_a02be8aa0dbef77e02dddc715a726fb67}{\index{Camera@{Camera}!reset@{reset}}
+\index{reset@{reset}!Camera@{Camera}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a02be8aa0dbef77e02dddc715a726fb67}
+
+
+Reseteaza pozitia camerei la cea initiala. 
+
+
+
+Definition at line 88 of file camera.\-cpp.
+
+\hypertarget{class_camera_a61e15d0587412375261ca39de2f4776b}{\index{Camera@{Camera}!rotate\-Left@{rotate\-Left}}
+\index{rotate\-Left@{rotate\-Left}!Camera@{Camera}}
+\subsubsection[{rotate\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::rotate\-Left (
+\begin{DoxyParamCaption}
+\item[{float}]{step}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a61e15d0587412375261ca39de2f4776b}
+
+
+Roteste camera spre stanga. 
+
+
+
+Definition at line 66 of file camera.\-cpp.
+
+\hypertarget{class_camera_a149d10b600ac1d5b91430cdf9a3dae7d}{\index{Camera@{Camera}!rotate\-Right@{rotate\-Right}}
+\index{rotate\-Right@{rotate\-Right}!Camera@{Camera}}
+\subsubsection[{rotate\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::rotate\-Right (
+\begin{DoxyParamCaption}
+\item[{float}]{step}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a149d10b600ac1d5b91430cdf9a3dae7d}
+
+
+Roteste camera spre dreapta. 
+
+
+
+Definition at line 77 of file camera.\-cpp.
+
+\hypertarget{class_camera_aba9df9fb2129b591d26bb5419318355d}{\index{Camera@{Camera}!set\-Rotation@{set\-Rotation}}
+\index{set\-Rotation@{set\-Rotation}!Camera@{Camera}}
+\subsubsection[{set\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::set\-Rotation (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{new\-Axis}
+\end{DoxyParamCaption}
+)}}\label{class_camera_aba9df9fb2129b591d26bb5419318355d}
+
+
+Schimba vectorul in jurul careia se desfasoara rotatia la vectorul new\-Axis, ar fi o idee buna sa primeasca ca parametru un quaternion. 
+
+
+
+Definition at line 24 of file camera.\-cpp.
+
+\hypertarget{class_camera_ac6edf32fdd18fbd064255beefc9ceca2}{\index{Camera@{Camera}!set\-Scale@{set\-Scale}}
+\index{set\-Scale@{set\-Scale}!Camera@{Camera}}
+\subsubsection[{set\-Scale}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::set\-Scale (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{new\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_camera_ac6edf32fdd18fbd064255beefc9ceca2}
+
+
+Seteaza scalarea la dimensiunile new\-Size  Netestata! 
+
+
+
+Definition at line 31 of file camera.\-cpp.
+
+\hypertarget{class_camera_a73ccd8097845e13876fc693c5e614d90}{\index{Camera@{Camera}!set\-Translation@{set\-Translation}}
+\index{set\-Translation@{set\-Translation}!Camera@{Camera}}
+\subsubsection[{set\-Translation}]{\setlength{\rightskip}{0pt plus 5cm}void Camera\-::set\-Translation (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{point}
+\end{DoxyParamCaption}
+)}}\label{class_camera_a73ccd8097845e13876fc693c5e614d90}
+
+
+Schimba pozitia la pozitia {\bfseries new\-Point} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\-Point} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 17 of file camera.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_camera_a49d1e42b190a89485c29b6a0bd0fb19b}{\index{Camera@{Camera}!rotation@{rotation}}
+\index{rotation@{rotation}!Camera@{Camera}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Camera\-::rotation}}\label{class_camera_a49d1e42b190a89485c29b6a0bd0fb19b}
+
+
+Definition at line 21 of file camera.\-h.
+
+\hypertarget{class_camera_a048f3227386a7874d82d5a955eab803c}{\index{Camera@{Camera}!scale@{scale}}
+\index{scale@{scale}!Camera@{Camera}}
+\subsubsection[{scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Camera\-::scale}}\label{class_camera_a048f3227386a7874d82d5a955eab803c}
+
+
+Definition at line 21 of file camera.\-h.
+
+\hypertarget{class_camera_ad86bc5edaaf030fa76edac96040e56f4}{\index{Camera@{Camera}!translation@{translation}}
+\index{translation@{translation}!Camera@{Camera}}
+\subsubsection[{translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Camera\-::translation}}\label{class_camera_ad86bc5edaaf030fa76edac96040e56f4}
+
+
+Definition at line 21 of file camera.\-h.
+
+\hypertarget{class_camera_aa2e21e07158e70c900e1a8473b4e96d7}{\index{Camera@{Camera}!undo\-\_\-translation@{undo\-\_\-translation}}
+\index{undo\-\_\-translation@{undo\-\_\-translation}!Camera@{Camera}}
+\subsubsection[{undo\-\_\-translation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Camera\-::undo\-\_\-translation}}\label{class_camera_aa2e21e07158e70c900e1a8473b4e96d7}
+
+\begin{DoxyParams}{Parameters}
+{\em undo\-\_\-translation} & Pentru cazul in care personajul se loveste de ceva, nu trebuie sa mai avanseze si se intoarce la pozitia dinaintea coliziunii \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 28 of file camera.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{camera_8h}{camera.\-h}\item 
+\hyperlink{camera_8cpp}{camera.\-cpp}\end{DoxyCompactItemize}

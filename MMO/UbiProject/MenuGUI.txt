@@ -1,0 +1,12 @@
+name=sky
+filename=static_objects/MenuBackground.obj
+pozX=0.0f
+pozY=0.0f
+pozZ=0.0f
+angle=0.0f
+rotX=0.0f
+rotY=0.0f
+rotZ=0.0f
+scaleX=0.0f
+scaleY=0.0f
+scaleZ=0.0f

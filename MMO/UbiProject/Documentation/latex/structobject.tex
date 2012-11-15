@@ -1,0 +1,227 @@
+\hypertarget{structobject}{\section{object Class Reference}
+\label{structobject}\index{object@{object}}
+}
+
+
+{\ttfamily \#include $<$Comp\-Core.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structobject_a04aad740887b47c735b9ed9078e45d77}{object} ()
+\item 
+\hyperlink{structobject_aecd824abdc96ff340acf4ea25a34d76d}{$\sim$object} ()
+\item 
+void \hyperlink{structobject_ab64ca513c1f82c36595b8832b4a4cac6}{set\-Bounding\-Box} (const char $\ast$filename)
+\begin{DoxyCompactList}\small\item\em Citeste un bounding box dintr-\/un fisier.\-A se vedea formatul fisierelor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \hyperlink{structobject_a0c84bc492e5b46a04639699248aac2bf}{name} \mbox{[}40\mbox{]}
+\item 
+std\-::vector$<$ \hyperlink{struct_vector3}{Vector3} $>$ \hyperlink{structobject_a946d75bccd951d38bc1690fdf1ac8ec3}{vertices}
+\item 
+std\-::vector$<$ \hyperlink{struct_vector3}{Vector3} $>$ \hyperlink{structobject_a94599791d2212df04537a455d33e77d8}{normals}
+\item 
+std\-::vector$<$ \hyperlink{struct_point2_d}{Point2\-D} $>$ \hyperlink{structobject_ad7164f2aad0e32c7c33bc4aa2a31abd9}{tex\-Map}
+\item 
+std\-::vector$<$ \hyperlink{struct_face}{Face} $>$ \hyperlink{structobject_abd80dcad30e5ad35a5b85e091d3dcdce}{face}
+\item 
+G\-Luint \hyperlink{structobject_a95c649f449cd461768418b5adfa4d3f2}{texture\-Id}
+\item 
+G\-Luint \hyperlink{structobject_a0a8d492eb2cf2c7a4649c632cd8548fd}{V\-B\-O\-I\-D}
+\item 
+G\-Luint \hyperlink{structobject_a2172358a3a70a1ae7cacf9d42d2f81d0}{I\-B\-O\-I\-D}
+\item 
+std\-::vector$<$ \hyperlink{class_bounding_box}{Bounding\-Box} $\ast$ $>$ \hyperlink{structobject_acc14551671b33bc6f1204659e581ade8}{bounding\-\_\-box}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{structobject_ada1bd59a43bb6fd1698897cbc307ace9}{location}
+\item 
+std\-::vector$<$ \hyperlink{struct_vector3}{Vector3} $>$ \hyperlink{structobject_aba41d6189c68f5b55b17d467258d3365}{duplicates}
+\item 
+float \hyperlink{structobject_ae5a08c19bc968358c53cedad8a1a6ca3}{angle}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{structobject_aca33f4c591578298adeaedec0d354e9a}{rotation}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{structobject_a0d2429466fa7d9a13c1257cd043594c3}{scaling}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+defineste un mesh 
+
+Definition at line 241 of file Comp\-Core.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{structobject_a04aad740887b47c735b9ed9078e45d77}{\index{object@{object}!object@{object}}
+\index{object@{object}!object@{object}}
+\subsubsection[{object}]{\setlength{\rightskip}{0pt plus 5cm}object\-::object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structobject_a04aad740887b47c735b9ed9078e45d77}
+
+
+Definition at line 252 of file Comp\-Core.\-cpp.
+
+\hypertarget{structobject_aecd824abdc96ff340acf4ea25a34d76d}{\index{object@{object}!$\sim$object@{$\sim$object}}
+\index{$\sim$object@{$\sim$object}!object@{object}}
+\subsubsection[{$\sim$object}]{\setlength{\rightskip}{0pt plus 5cm}object\-::$\sim$object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{structobject_aecd824abdc96ff340acf4ea25a34d76d}
+
+
+Definition at line 257 of file Comp\-Core.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{structobject_ab64ca513c1f82c36595b8832b4a4cac6}{\index{object@{object}!set\-Bounding\-Box@{set\-Bounding\-Box}}
+\index{set\-Bounding\-Box@{set\-Bounding\-Box}!object@{object}}
+\subsubsection[{set\-Bounding\-Box}]{\setlength{\rightskip}{0pt plus 5cm}void object\-::set\-Bounding\-Box (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename}
+\end{DoxyParamCaption}
+)}}\label{structobject_ab64ca513c1f82c36595b8832b4a4cac6}
+
+
+Citeste un bounding box dintr-\/un fisier.\-A se vedea formatul fisierelor. 
+
+
+
+Definition at line 272 of file Comp\-Core.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{structobject_ae5a08c19bc968358c53cedad8a1a6ca3}{\index{object@{object}!angle@{angle}}
+\index{angle@{angle}!object@{object}}
+\subsubsection[{angle}]{\setlength{\rightskip}{0pt plus 5cm}float object\-::angle}}\label{structobject_ae5a08c19bc968358c53cedad8a1a6ca3}
+
+\begin{DoxyParams}{Parameters}
+{\em angle} & si \\
+\hline
+{\em rotation} & formeaza un quaternion pentru rotatie \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 266 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_acc14551671b33bc6f1204659e581ade8}{\index{object@{object}!bounding\-\_\-box@{bounding\-\_\-box}}
+\index{bounding\-\_\-box@{bounding\-\_\-box}!object@{object}}
+\subsubsection[{bounding\-\_\-box}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Bounding\-Box}$\ast$$>$ object\-::bounding\-\_\-box}}\label{structobject_acc14551671b33bc6f1204659e581ade8}
+
+
+Definition at line 256 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_aba41d6189c68f5b55b17d467258d3365}{\index{object@{object}!duplicates@{duplicates}}
+\index{duplicates@{duplicates}!object@{object}}
+\subsubsection[{duplicates}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Vector3}$>$ object\-::duplicates}}\label{structobject_aba41d6189c68f5b55b17d467258d3365}
+
+\begin{DoxyParams}{Parameters}
+{\em duplicates} & Reprezinta replicarile aceluiasi mesh la diferite coordonate \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 262 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_abd80dcad30e5ad35a5b85e091d3dcdce}{\index{object@{object}!face@{face}}
+\index{face@{face}!object@{object}}
+\subsubsection[{face}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Face}$>$ object\-::face}}\label{structobject_abd80dcad30e5ad35a5b85e091d3dcdce}
+
+
+Definition at line 252 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_a2172358a3a70a1ae7cacf9d42d2f81d0}{\index{object@{object}!I\-B\-O\-I\-D@{I\-B\-O\-I\-D}}
+\index{I\-B\-O\-I\-D@{I\-B\-O\-I\-D}!object@{object}}
+\subsubsection[{I\-B\-O\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint object\-::\-I\-B\-O\-I\-D}}\label{structobject_a2172358a3a70a1ae7cacf9d42d2f81d0}
+
+
+Definition at line 255 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_ada1bd59a43bb6fd1698897cbc307ace9}{\index{object@{object}!location@{location}}
+\index{location@{location}!object@{object}}
+\subsubsection[{location}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} object\-::location}}\label{structobject_ada1bd59a43bb6fd1698897cbc307ace9}
+
+
+Definition at line 257 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_a0c84bc492e5b46a04639699248aac2bf}{\index{object@{object}!name@{name}}
+\index{name@{name}!object@{object}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}char object\-::name\mbox{[}40\mbox{]}}}\label{structobject_a0c84bc492e5b46a04639699248aac2bf}
+
+
+Definition at line 242 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_a94599791d2212df04537a455d33e77d8}{\index{object@{object}!normals@{normals}}
+\index{normals@{normals}!object@{object}}
+\subsubsection[{normals}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Vector3}$>$ object\-::normals}}\label{structobject_a94599791d2212df04537a455d33e77d8}
+
+
+Definition at line 250 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_aca33f4c591578298adeaedec0d354e9a}{\index{object@{object}!rotation@{rotation}}
+\index{rotation@{rotation}!object@{object}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} object\-::rotation}}\label{structobject_aca33f4c591578298adeaedec0d354e9a}
+
+
+Definition at line 267 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_a0d2429466fa7d9a13c1257cd043594c3}{\index{object@{object}!scaling@{scaling}}
+\index{scaling@{scaling}!object@{object}}
+\subsubsection[{scaling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} object\-::scaling}}\label{structobject_a0d2429466fa7d9a13c1257cd043594c3}
+
+
+Definition at line 268 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_ad7164f2aad0e32c7c33bc4aa2a31abd9}{\index{object@{object}!tex\-Map@{tex\-Map}}
+\index{tex\-Map@{tex\-Map}!object@{object}}
+\subsubsection[{tex\-Map}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Point2\-D}$>$ object\-::tex\-Map}}\label{structobject_ad7164f2aad0e32c7c33bc4aa2a31abd9}
+
+
+Definition at line 251 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_a95c649f449cd461768418b5adfa4d3f2}{\index{object@{object}!texture\-Id@{texture\-Id}}
+\index{texture\-Id@{texture\-Id}!object@{object}}
+\subsubsection[{texture\-Id}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint object\-::texture\-Id}}\label{structobject_a95c649f449cd461768418b5adfa4d3f2}
+
+
+Definition at line 254 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_a0a8d492eb2cf2c7a4649c632cd8548fd}{\index{object@{object}!V\-B\-O\-I\-D@{V\-B\-O\-I\-D}}
+\index{V\-B\-O\-I\-D@{V\-B\-O\-I\-D}!object@{object}}
+\subsubsection[{V\-B\-O\-I\-D}]{\setlength{\rightskip}{0pt plus 5cm}G\-Luint object\-::\-V\-B\-O\-I\-D}}\label{structobject_a0a8d492eb2cf2c7a4649c632cd8548fd}
+
+
+Definition at line 255 of file Comp\-Core.\-h.
+
+\hypertarget{structobject_a946d75bccd951d38bc1690fdf1ac8ec3}{\index{object@{object}!vertices@{vertices}}
+\index{vertices@{vertices}!object@{object}}
+\subsubsection[{vertices}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf Vector3}$>$ object\-::vertices}}\label{structobject_a946d75bccd951d38bc1690fdf1ac8ec3}
+
+\begin{DoxyParams}{Parameters}
+{\em vertices} & \\
+\hline
+{\em normals} & \\
+\hline
+{\em text\-Map} & \\
+\hline
+{\em face} & Vectori temporari care sunt goi in cea mai mare parte a timpului Ar putea fi eliminati, dar cu grija, sunt mostenire de cand se desenau mesh-\/urile din procesor \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 249 of file Comp\-Core.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_comp_core_8h}{Comp\-Core.\-h}\item 
+\hyperlink{_comp_core_8cpp}{Comp\-Core.\-cpp}\end{DoxyCompactItemize}

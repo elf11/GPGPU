@@ -1,0 +1,208 @@
+\hypertarget{class_high_map}{\section{High\-Map Class Reference}
+\label{class_high_map}\index{High\-Map@{High\-Map}}
+}
+
+
+{\ttfamily \#include $<$High\-Map.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_high_map_ae54cafe69f16922eb8cfed91a802f220}{High\-Map} (std\-::vector$<$ \hyperlink{struct_vector3}{Vector3} $>$ $\ast$vertices, char $\ast$details\-File)
+\item 
+\hyperlink{class_high_map_ad1f53955c59d06ce16669580262281d3}{$\sim$\-High\-Map} ()
+\item 
+float \hyperlink{class_high_map_a9822e27bd6a75ff6af8661ba6c08bac5}{get\-Height} (int x, int z) const 
+\item 
+float \hyperlink{class_high_map_a329cf5cbdece4a8e13f153d306fcb032}{get\-Y\-Point} (float x, float z)
+\item 
+int \hyperlink{class_high_map_adc3b5a647195ae6c98f02585ec7951ae}{get\-Max\-Latitude} () const 
+\begin{DoxyCompactList}\small\item\em Returneaza numarul de coloane. \end{DoxyCompactList}\item 
+int \hyperlink{class_high_map_a3b3ebb7d9ad385f0df948639e3018a97}{get\-Max\-Longitude} () const 
+\begin{DoxyCompactList}\small\item\em Returneaza numarul de linii. \end{DoxyCompactList}\item 
+float \hyperlink{class_high_map_a657e8cf3bc92060a1baa2e7d5c4049d8}{get\-Longitude\-Step} () const 
+\begin{DoxyCompactList}\small\item\em Returneaza distanta dintr 2 coloane consecutive. \end{DoxyCompactList}\item 
+float \hyperlink{class_high_map_a8b5534cb6e91dc35e23e8a0b3335521d}{get\-Latitude\-Step} () const 
+\begin{DoxyCompactList}\small\item\em Returneaza distanta intre 2 linii consecutive. \end{DoxyCompactList}\item 
+int \hyperlink{class_high_map_a824a656e2e2e3ac563e148cc6c66d72d}{get\-Lines\-Count} () const 
+\begin{DoxyCompactList}\small\item\em Returneaza numarul de linii din matrice. \end{DoxyCompactList}\item 
+int \hyperlink{class_high_map_a1f0fef19174d9f5f8f3b1d1e94e62c16}{get\-Columns\-Count} () const 
+\begin{DoxyCompactList}\small\item\em Returneaza numarul de coloane din matrice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+pentru highmap Implementarea este optima, dar nu este implementata foarte bine in sensul ca are bug-\/uri, un studiu al acestora si apoi rezolvarea lor este necesara De asemenea trebuie modificat modelul dupa care este creat high-\/map-\/ul din motive pe care le expplic in cele ce urmeaza\-: High-\/map-\/ul reprezinta de fapt vertecsii modelului terenului, acestia sunt special aliniati la distante egale pe ox, oz, distanta specificata in fisier-\/ul de configurare al high-\/map-\/ului, de asemenea numarul coloanelor si al liniilor sunt specificate Cum mesh-\/ul este compus numai din triunghiuri -\/ este bine sa fie asa pentru ca daca ar fi dreptunghiuri ar putea incalca usor regulile cum ca fetele trebuie sa fie complanare-\/ diagonalele dupa implementarea curenta nu sunt aliniate in acelasi sens. Prin aceasta metoda inaltimea corespunzatoare este calculata in O(1). 
+
+Definition at line 30 of file High\-Map.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_high_map_ae54cafe69f16922eb8cfed91a802f220}{\index{High\-Map@{High\-Map}!High\-Map@{High\-Map}}
+\index{High\-Map@{High\-Map}!HighMap@{High\-Map}}
+\subsubsection[{High\-Map}]{\setlength{\rightskip}{0pt plus 5cm}High\-Map\-::\-High\-Map (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Vector3} $>$ $\ast$}]{vertices, }
+\item[{char $\ast$}]{details\-File}
+\end{DoxyParamCaption}
+)}}\label{class_high_map_ae54cafe69f16922eb8cfed91a802f220}
+
+
+Definition at line 3 of file High\-Map.\-cpp.
+
+\hypertarget{class_high_map_ad1f53955c59d06ce16669580262281d3}{\index{High\-Map@{High\-Map}!$\sim$\-High\-Map@{$\sim$\-High\-Map}}
+\index{$\sim$\-High\-Map@{$\sim$\-High\-Map}!HighMap@{High\-Map}}
+\subsubsection[{$\sim$\-High\-Map}]{\setlength{\rightskip}{0pt plus 5cm}High\-Map\-::$\sim$\-High\-Map (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_high_map_ad1f53955c59d06ce16669580262281d3}
+\begin{DoxyAttention}{Attention}
+Caution! vertices dont have to be deleted here 
+\end{DoxyAttention}
+
+
+Definition at line 27 of file High\-Map.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_high_map_a1f0fef19174d9f5f8f3b1d1e94e62c16}{\index{High\-Map@{High\-Map}!get\-Columns\-Count@{get\-Columns\-Count}}
+\index{get\-Columns\-Count@{get\-Columns\-Count}!HighMap@{High\-Map}}
+\subsubsection[{get\-Columns\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int High\-Map\-::get\-Columns\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_high_map_a1f0fef19174d9f5f8f3b1d1e94e62c16}
+
+
+Returneaza numarul de coloane din matrice. 
+
+
+
+Definition at line 84 of file High\-Map.\-h.
+
+\hypertarget{class_high_map_a9822e27bd6a75ff6af8661ba6c08bac5}{\index{High\-Map@{High\-Map}!get\-Height@{get\-Height}}
+\index{get\-Height@{get\-Height}!HighMap@{High\-Map}}
+\subsubsection[{get\-Height}]{\setlength{\rightskip}{0pt plus 5cm}float High\-Map\-::get\-Height (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{z}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_high_map_a9822e27bd6a75ff6af8661ba6c08bac5}
+\begin{DoxyReturn}{Returns}
+Returneaza inaltimea corespunzatoare lementului de pe linia 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & si coloana \\
+\hline
+{\em y} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file High\-Map.\-h.
+
+\hypertarget{class_high_map_a8b5534cb6e91dc35e23e8a0b3335521d}{\index{High\-Map@{High\-Map}!get\-Latitude\-Step@{get\-Latitude\-Step}}
+\index{get\-Latitude\-Step@{get\-Latitude\-Step}!HighMap@{High\-Map}}
+\subsubsection[{get\-Latitude\-Step}]{\setlength{\rightskip}{0pt plus 5cm}float High\-Map\-::get\-Latitude\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_high_map_a8b5534cb6e91dc35e23e8a0b3335521d}
+
+
+Returneaza distanta intre 2 linii consecutive. 
+
+
+
+Definition at line 74 of file High\-Map.\-h.
+
+\hypertarget{class_high_map_a824a656e2e2e3ac563e148cc6c66d72d}{\index{High\-Map@{High\-Map}!get\-Lines\-Count@{get\-Lines\-Count}}
+\index{get\-Lines\-Count@{get\-Lines\-Count}!HighMap@{High\-Map}}
+\subsubsection[{get\-Lines\-Count}]{\setlength{\rightskip}{0pt plus 5cm}int High\-Map\-::get\-Lines\-Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_high_map_a824a656e2e2e3ac563e148cc6c66d72d}
+
+
+Returneaza numarul de linii din matrice. 
+
+
+
+Definition at line 79 of file High\-Map.\-h.
+
+\hypertarget{class_high_map_a657e8cf3bc92060a1baa2e7d5c4049d8}{\index{High\-Map@{High\-Map}!get\-Longitude\-Step@{get\-Longitude\-Step}}
+\index{get\-Longitude\-Step@{get\-Longitude\-Step}!HighMap@{High\-Map}}
+\subsubsection[{get\-Longitude\-Step}]{\setlength{\rightskip}{0pt plus 5cm}float High\-Map\-::get\-Longitude\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_high_map_a657e8cf3bc92060a1baa2e7d5c4049d8}
+
+
+Returneaza distanta dintr 2 coloane consecutive. 
+
+
+
+Definition at line 69 of file High\-Map.\-h.
+
+\hypertarget{class_high_map_adc3b5a647195ae6c98f02585ec7951ae}{\index{High\-Map@{High\-Map}!get\-Max\-Latitude@{get\-Max\-Latitude}}
+\index{get\-Max\-Latitude@{get\-Max\-Latitude}!HighMap@{High\-Map}}
+\subsubsection[{get\-Max\-Latitude}]{\setlength{\rightskip}{0pt plus 5cm}int High\-Map\-::get\-Max\-Latitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_high_map_adc3b5a647195ae6c98f02585ec7951ae}
+
+
+Returneaza numarul de coloane. 
+
+\begin{DoxyAttention}{Attention}
+Numarul de linii nu este numarul de coloane din matrice ci practic latimea hartii 
+\end{DoxyAttention}
+
+
+Definition at line 57 of file High\-Map.\-h.
+
+\hypertarget{class_high_map_a3b3ebb7d9ad385f0df948639e3018a97}{\index{High\-Map@{High\-Map}!get\-Max\-Longitude@{get\-Max\-Longitude}}
+\index{get\-Max\-Longitude@{get\-Max\-Longitude}!HighMap@{High\-Map}}
+\subsubsection[{get\-Max\-Longitude}]{\setlength{\rightskip}{0pt plus 5cm}int High\-Map\-::get\-Max\-Longitude (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_high_map_a3b3ebb7d9ad385f0df948639e3018a97}
+
+
+Returneaza numarul de linii. 
+
+\begin{DoxyAttention}{Attention}
+Numarul de linii nu este numarul de linii din matrice ci practic adancimea hartii 
+\end{DoxyAttention}
+
+
+Definition at line 64 of file High\-Map.\-h.
+
+\hypertarget{class_high_map_a329cf5cbdece4a8e13f153d306fcb032}{\index{High\-Map@{High\-Map}!get\-Y\-Point@{get\-Y\-Point}}
+\index{get\-Y\-Point@{get\-Y\-Point}!HighMap@{High\-Map}}
+\subsubsection[{get\-Y\-Point}]{\setlength{\rightskip}{0pt plus 5cm}float High\-Map\-::get\-Y\-Point (
+\begin{DoxyParamCaption}
+\item[{float}]{x, }
+\item[{float}]{z}
+\end{DoxyParamCaption}
+)}}\label{class_high_map_a329cf5cbdece4a8e13f153d306fcb032}
+\begin{DoxyReturn}{Returns}
+Returneaza inaltimea dupa puncte pentru care nu sunt disponibile valori in matrice pentru ca nu sunt numere intregi, aici trebuie facuta interpolare liniara 
+\end{DoxyReturn}
+
+
+Definition at line 31 of file High\-Map.\-cpp.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_high_map_8h}{High\-Map.\-h}\item 
+\hyperlink{_high_map_8cpp}{High\-Map.\-cpp}\end{DoxyCompactItemize}

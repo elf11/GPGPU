@@ -1,0 +1,102 @@
+\hypertarget{sock__util_8h}{\section{sock\-\_\-util.\-h File Reference}
+\label{sock__util_8h}\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}}
+}
+{\ttfamily \#include $<$winsock2.\-h$>$}\\*
+{\ttfamily \#include $<$windows.\-h$>$}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{sock__util_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}{W\-I\-N32\-\_\-\-L\-E\-A\-N\-\_\-\-A\-N\-D\-\_\-\-M\-E\-A\-N}
+\item 
+\#define \hyperlink{sock__util_8h_ab5da6bbb562df8ddc215dff560ceedec}{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-I\-S\-T\-E\-N\-\_\-\-B\-A\-C\-K\-L\-O\-G}~5
+\item 
+\#define \hyperlink{sock__util_8h_aa08b9a8d3f0ae2d8fd8751cf65939544}{S\-S\-A}~struct sockaddr
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{sock__util_8h_a4e12ba93215ad9b5c21f711c0f64ab8c}{wsa\-\_\-init} (void)
+\item 
+void \hyperlink{sock__util_8h_ad6e3c2f4b04615dbe8709e53e3a20359}{wsa\-\_\-cleanup} (void)
+\item 
+S\-O\-C\-K\-E\-T \hyperlink{sock__util_8h_a20c92c2386ed43983604c540b0124532}{tcp\-\_\-connect\-\_\-to\-\_\-server} (const char $\ast$name, unsigned short port)
+\item 
+int \hyperlink{sock__util_8h_acd70db08d10c446638aeaa757a539e87}{tcp\-\_\-close\-\_\-connection} (S\-O\-C\-K\-E\-T s)
+\item 
+S\-O\-C\-K\-E\-T \hyperlink{sock__util_8h_ae7019a72cb0d883365969346bc7f4139}{tcp\-\_\-create\-\_\-listener} (unsigned short port, int backlog)
+\item 
+int \hyperlink{sock__util_8h_a84bf82d994c24fb6cea1b71d565b7871}{get\-\_\-peer\-\_\-address} (S\-O\-C\-K\-E\-T s, char $\ast$buf, size\-\_\-t len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{sock__util_8h_ab5da6bbb562df8ddc215dff560ceedec}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-I\-S\-T\-E\-N\-\_\-\-B\-A\-C\-K\-L\-O\-G@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-I\-S\-T\-E\-N\-\_\-\-B\-A\-C\-K\-L\-O\-G}}
+\index{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-I\-S\-T\-E\-N\-\_\-\-B\-A\-C\-K\-L\-O\-G@{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-I\-S\-T\-E\-N\-\_\-\-B\-A\-C\-K\-L\-O\-G}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-I\-S\-T\-E\-N\-\_\-\-B\-A\-C\-K\-L\-O\-G}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\-E\-F\-A\-U\-L\-T\-\_\-\-L\-I\-S\-T\-E\-N\-\_\-\-B\-A\-C\-K\-L\-O\-G~5}}\label{sock__util_8h_ab5da6bbb562df8ddc215dff560ceedec}
+
+
+Definition at line 33 of file sock\-\_\-util.\-h.
+
+\hypertarget{sock__util_8h_aa08b9a8d3f0ae2d8fd8751cf65939544}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!S\-S\-A@{S\-S\-A}}
+\index{S\-S\-A@{S\-S\-A}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{S\-S\-A}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\-S\-A~struct sockaddr}}\label{sock__util_8h_aa08b9a8d3f0ae2d8fd8751cf65939544}
+
+
+Definition at line 36 of file sock\-\_\-util.\-h.
+
+\hypertarget{sock__util_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!W\-I\-N32\-\_\-\-L\-E\-A\-N\-\_\-\-A\-N\-D\-\_\-\-M\-E\-A\-N@{W\-I\-N32\-\_\-\-L\-E\-A\-N\-\_\-\-A\-N\-D\-\_\-\-M\-E\-A\-N}}
+\index{W\-I\-N32\-\_\-\-L\-E\-A\-N\-\_\-\-A\-N\-D\-\_\-\-M\-E\-A\-N@{W\-I\-N32\-\_\-\-L\-E\-A\-N\-\_\-\-A\-N\-D\-\_\-\-M\-E\-A\-N}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{W\-I\-N32\-\_\-\-L\-E\-A\-N\-\_\-\-A\-N\-D\-\_\-\-M\-E\-A\-N}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\-I\-N32\-\_\-\-L\-E\-A\-N\-\_\-\-A\-N\-D\-\_\-\-M\-E\-A\-N}}\label{sock__util_8h_ac7bef5d85e3dcd73eef56ad39ffc84a9}
+
+
+Definition at line 28 of file sock\-\_\-util.\-h.
+
+
+
+\subsection{Function Documentation}
+\hypertarget{sock__util_8h_a84bf82d994c24fb6cea1b71d565b7871}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!get\-\_\-peer\-\_\-address@{get\-\_\-peer\-\_\-address}}
+\index{get\-\_\-peer\-\_\-address@{get\-\_\-peer\-\_\-address}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{get\-\_\-peer\-\_\-address}]{\setlength{\rightskip}{0pt plus 5cm}int get\-\_\-peer\-\_\-address (
+\begin{DoxyParamCaption}
+\item[{S\-O\-C\-K\-E\-T}]{s, }
+\item[{char $\ast$}]{buf, }
+\item[{size\-\_\-t}]{len}
+\end{DoxyParamCaption}
+)}}\label{sock__util_8h_a84bf82d994c24fb6cea1b71d565b7871}
+\hypertarget{sock__util_8h_acd70db08d10c446638aeaa757a539e87}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!tcp\-\_\-close\-\_\-connection@{tcp\-\_\-close\-\_\-connection}}
+\index{tcp\-\_\-close\-\_\-connection@{tcp\-\_\-close\-\_\-connection}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{tcp\-\_\-close\-\_\-connection}]{\setlength{\rightskip}{0pt plus 5cm}int tcp\-\_\-close\-\_\-connection (
+\begin{DoxyParamCaption}
+\item[{S\-O\-C\-K\-E\-T}]{s}
+\end{DoxyParamCaption}
+)}}\label{sock__util_8h_acd70db08d10c446638aeaa757a539e87}
+\hypertarget{sock__util_8h_a20c92c2386ed43983604c540b0124532}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!tcp\-\_\-connect\-\_\-to\-\_\-server@{tcp\-\_\-connect\-\_\-to\-\_\-server}}
+\index{tcp\-\_\-connect\-\_\-to\-\_\-server@{tcp\-\_\-connect\-\_\-to\-\_\-server}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{tcp\-\_\-connect\-\_\-to\-\_\-server}]{\setlength{\rightskip}{0pt plus 5cm}S\-O\-C\-K\-E\-T tcp\-\_\-connect\-\_\-to\-\_\-server (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{unsigned short}]{port}
+\end{DoxyParamCaption}
+)}}\label{sock__util_8h_a20c92c2386ed43983604c540b0124532}
+\hypertarget{sock__util_8h_ae7019a72cb0d883365969346bc7f4139}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!tcp\-\_\-create\-\_\-listener@{tcp\-\_\-create\-\_\-listener}}
+\index{tcp\-\_\-create\-\_\-listener@{tcp\-\_\-create\-\_\-listener}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{tcp\-\_\-create\-\_\-listener}]{\setlength{\rightskip}{0pt plus 5cm}S\-O\-C\-K\-E\-T tcp\-\_\-create\-\_\-listener (
+\begin{DoxyParamCaption}
+\item[{unsigned short}]{port, }
+\item[{int}]{backlog}
+\end{DoxyParamCaption}
+)}}\label{sock__util_8h_ae7019a72cb0d883365969346bc7f4139}
+\hypertarget{sock__util_8h_ad6e3c2f4b04615dbe8709e53e3a20359}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!wsa\-\_\-cleanup@{wsa\-\_\-cleanup}}
+\index{wsa\-\_\-cleanup@{wsa\-\_\-cleanup}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{wsa\-\_\-cleanup}]{\setlength{\rightskip}{0pt plus 5cm}void wsa\-\_\-cleanup (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{sock__util_8h_ad6e3c2f4b04615dbe8709e53e3a20359}
+\hypertarget{sock__util_8h_a4e12ba93215ad9b5c21f711c0f64ab8c}{\index{sock\-\_\-util.\-h@{sock\-\_\-util.\-h}!wsa\-\_\-init@{wsa\-\_\-init}}
+\index{wsa\-\_\-init@{wsa\-\_\-init}!sock_util.h@{sock\-\_\-util.\-h}}
+\subsubsection[{wsa\-\_\-init}]{\setlength{\rightskip}{0pt plus 5cm}int wsa\-\_\-init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{sock__util_8h_a4e12ba93215ad9b5c21f711c0f64ab8c}

@@ -1,0 +1,43 @@
+Tutorial4.txt
+
+In acest tutorial am invatat ca: reutilizarea datelor la nivel local ajuta la 
+scaderea latentei si depasirea barierelor de latime de banda.
+Datele scrise in shared memory sunt accesibile oricarui thread din blocul curent
+dar nu sunt accesibile intre blocuri. 
+
+CUDA occupancy calculator ofera o metoda facila de a observa cate dintre proce-
+soarele avute la dispozitie sunt utilizate cu diferite configuratii CUDA.
+cudaGetDeviceCount() - intoarce numarul de device'uri CUDA din sistem si
+cudaGetDeviceProperties() intoarce proprietatile acestor device'uri.
+
+Fiecare multiprocesor hardware are capacitatea de a procesa mai multe blocuri
+simultan, cat de multe depinde  de numarul de registre/thread si cat de multa
+shared memory/block este necesara de un kernel. Blocurile care sunt procesate
+de un multiprocesor in orice moment sunt numite active. Daca nu sunt destule
+registre sau shared memory la dispozitia unui multiprocesor atunci kernelul
+pe care am dori sa-l rulam acolo va esua la lansare.
+
+CUDA occupancy calculator a fost modificat pentru a  observa diferitele grade de
+ocupare ale multiprocesoarelor pentru mai multe grade de computabilitate, 1.0
+1.1, 1.2, 1.3, 2.0. 
+
+Fiecare block activ este spart in SIMD("Single Instruction Multiple Data") grupuri
+de threaduri numite "warps". Fiecare warp contine acelasi numar de threaduri,
+numite dimensiunea warp'ului care sunt executate de multiprocesor in ordinea
+SIMD. SIMD serializeaza operatiile conditionale, care pot influenta foarte mult
+timpul de rulare al kernelului, ambele ramuri trebuie evaluate.
+
+Warp'urile active: multiprocesorul schimba executia intre warpuri pentru a maximiza
+utilizarea resurselor computationale de care dispune. Ordinea de executia a 
+warp'urilor in blocuri si a blocurilor inselor nu este definita, este aleatoare.
+Threadurile pot fi insa sincronizate cu __syncthreads(), numai dupa apelul acestei
+functii sunt vizibile datele scrise in memoria shared si in cea globala. Apelul
+__syncthreads() este acceptat in interiorul unei conditionale numai daca 
+conditionala este evaluata in intregul block in acelasi fel, altfel pot aparea
+probleme.
+
+Fiecare multiprocesor contine urmatoarele 4 tipuri de memorie:
+	* registrii
+	* shared memory(cache)
+	* read-only constant memory
+	* read_only texture cache

@@ -1,0 +1,67 @@
+ \begin{DoxyAuthor}{Authors}
+Cosmin Mihai 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\-0\par
+\par
+ 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2012 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+G\-N\-U Public License.
+\end{DoxyCopyright}
+
+\begin{DoxyItemize}
+\item email\-: \href{mailto:yonutix@yahoo.com}{\tt yonutix@yahoo.\-com}\par
+
+\item website\-: \href{http://www.freya.zzl.org}{\tt Freya}
+\end{DoxyItemize}
+
+\section*{Fisierele de configurare\-:}
+
+{\bfseries Fisierul de configurare pentru obiectele statice\-:}\par
+ Proiectul trebuie sa contina in radacina un fisier \char`\"{}static\-\_\-obj.\-txt\char`\"{} cu urmatorul format\-:\par
+ name=\mbox{[}nume obiect\mbox{]}\par
+ filename=\mbox{[}adresa obiect in format binar(vezi formatul binar al obiectelor)\mbox{]}\par
+ texture=\mbox{[}adresa imaginii care va fi folosita ca textura in format T\-G\-A 8\-B uncompressed\mbox{]}\par
+ poz\-X=\mbox{[}pozitia pe axa ox\mbox{]}\par
+ poz\-Y=\mbox{[}pozitia pe axa oy\mbox{]}\par
+ poz\-Z=\mbox{[}pozitia pe axa oz\mbox{]}\par
+ angle=\mbox{[}unghiul rotatiei\mbox{]}\par
+ rot\-X=\mbox{[}componenta pe ox a vectorului rotatie\mbox{]}\par
+ rot\-Y=\mbox{[}componenta pe oy a vectorului rotatie\mbox{]}\par
+ rot\-Z=\mbox{[}componenta pe oz a vectorului rotatie\mbox{]}\par
+ scale\-X=\mbox{[}componenta pe ox a scalarii\mbox{]}\par
+ scale\-Y=\mbox{[}componenta pe oy a scalarii\mbox{]}\par
+ scale\-Z=\mbox{[}componenta pe oz a scalarii\mbox{]}\par
+ //scale\-X, scale\-Y, scale\-Z nu sunt folosite in verisunea 1.\-0\par
+ boundingbox=\mbox{[}Adresa bounding-\/box-\/ului in format bb -\/ vezi format bb\mbox{]}\par
+ {\bfseries Fisierul de configurare pentru highmap}\par
+ Se numeste \char`\"{}high\-Map.\-txt\char`\"{} si contine\-:\par
+ lines=\mbox{[}numarul de vertecsi de-\/a lungul unei coloane\mbox{]}\par
+ columns=\mbox{[}numarul de vertecsi de-\/a lungul unei linii\mbox{]}\par
+ line\-Step=\mbox{[}distanta dintre 2 vertecsi de pe linii consecutive\mbox{]}\par
+ column\-Step=\mbox{[}distanta dintre 2 coloane de vertecsi consecutive\mbox{]}\par
+ \section*{Formate fisiere\-:}
+
+{\bfseries .bin}\par
+ Fisier binar\-:\par
+ $|$\-Numar vertecsi sizeof(int)$|$\textbackslash{} v(veretex.\-x vertex.\-y vertex.\-z) sizeof(float)$\ast$ nr vertecsi $\ast$ 3 \textbackslash{}\par
+ $|$\-Numar normale sizeof(int)$|$\textbackslash{} v(normala.\-x normala.\-y normala.\-z) sizeof(float)$\ast$ nr normale $\ast$ 3 \textbackslash{}\par
+ $|$\-Numar coordonate textura sizeof(int)$|$\textbackslash{} v(map.\-x map.\-y) sizeof(float)$\ast$ nr normale $\ast$ 2 \textbackslash{}\par
+ $|$\-Numar fete sizeof(int)$|$\textbackslash{} numar fete $\ast$ sizeof(\-Face)\textbackslash{}\par
+ {\bfseries .bb}\par
+ Reprezinta un set de bounding-\/box-\/uri\par
+ In versiunea 1.\-0 exista 2 tipuri de bounding-\/box-\/uri\-:\par
+
+\begin{DoxyItemize}
+\item 0 Paralelipiped care este reprezentat de 6 float-\/uri(min\-Point, max\-Point)\par
+
+\item 1 Sfera care este reprezentata de 4 float-\/uri pozitia, raza\par
+
+\item Pe prima linie se afla numarul de bounding-\/box-\/uri\par
+ pe urmaroaterele se afla informatiile despre fiecare bounding-\/box sfera sau paralelipiped\par
+ 
+\end{DoxyItemize}

@@ -1,0 +1,247 @@
+\hypertarget{class_menu_g_u_i}{\section{Menu\-G\-U\-I Class Reference}
+\label{class_menu_g_u_i}\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}}
+}
+
+
+{\ttfamily \#include $<$Menu\-G\-U\-I.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_menu_g_u_i_a2c41412095fc43e66c6acceb664a203c}{Menu\-G\-U\-I} ()
+\item 
+\hyperlink{class_menu_g_u_i_ade7e3f7fb26b4a0befb4cb3e0bf30cee}{$\sim$\-Menu\-G\-U\-I} ()
+\item 
+void \hyperlink{class_menu_g_u_i_abc57c1997de32e0c17713f9d20728186}{display} ()
+\begin{DoxyCompactList}\small\item\em deseneaza meniul pe ecran \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_g_u_i_ae2a838fa10f38966e49580494057d25c}{bind\-Texture} ()
+\begin{DoxyCompactList}\small\item\em Din cauza faptului ca se genereaza o textura noua de fiecare data cand se intra in meniu, trebuie legata textura noua de fiecare data. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_g_u_i_a98ea7d1a53b4f583ead229f80b872ff5}{delete\-Texture} ()
+\item 
+void \hyperlink{class_menu_g_u_i_ad1fba8bb6d1851e4ab663ca869275162}{show} ()
+\begin{DoxyCompactList}\small\item\em Arata meni-\/ul, cam la fel ca si interfata din Java. \end{DoxyCompactList}\item 
+void \hyperlink{class_menu_g_u_i_ab86e29450e7bf0ded4f41213658f9291}{hide} ()
+\begin{DoxyCompactList}\small\item\em Ascunde meniul sau mai bine zis impiedica desenarea acestuia pe ecran. \end{DoxyCompactList}\item 
+bool \hyperlink{class_menu_g_u_i_a1a87191bece0e81a6fdbc0ea9fc1b823}{is\-Visible} () const 
+\item 
+void \hyperlink{class_menu_g_u_i_ab94886a43e3598ce490116bd06f3c828}{selective\-Blur} (unsigned char $\ast$original\-Img)
+\begin{DoxyCompactList}\small\item\em Calculeaza efectul imaginii de fundal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structobject}{object} \hyperlink{class_menu_g_u_i_a5f70990c15a161d6d9e04e436599e59c}{bkg\-\_\-obj}
+\item 
+\hyperlink{structobject}{object} \hyperlink{class_menu_g_u_i_a04d8a13b8437fa0ae19d5913f18678e3}{logo}
+\item 
+std\-::vector$<$ \hyperlink{structobject}{object} $>$ \hyperlink{class_menu_g_u_i_afb740b4478b7214db49bcfb8bca4350d}{menu\-\_\-list}
+\item 
+std\-::vector$<$ \hyperlink{structobject}{object} $>$ \hyperlink{class_menu_g_u_i_a2f433c33f8a0e3e6e37b79b6fb0dc57d}{dialog\-\_\-list}
+\item 
+int \hyperlink{class_menu_g_u_i_a6e978784cb9e9792dd96d935f9a2d1ca}{selected}
+\item 
+volatile int \hyperlink{class_menu_g_u_i_a16ac33cf65fbb4ce84e076a71aeb6137}{screen\-Width}
+\item 
+volatile int \hyperlink{class_menu_g_u_i_a41dee14f0233c0a7159f0601b3016e3a}{screen\-Height}
+\item 
+bool \hyperlink{class_menu_g_u_i_aeb5b730a3faea08895e234e1ad9ab53d}{visible}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+pentru meniul aplicatiei Contine butoane, cutii de dialog, background, logo 
+
+Definition at line 11 of file Menu\-G\-U\-I.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_menu_g_u_i_a2c41412095fc43e66c6acceb664a203c}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!Menu\-G\-U\-I@{Menu\-G\-U\-I}}
+\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{Menu\-G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}Menu\-G\-U\-I\-::\-Menu\-G\-U\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_g_u_i_a2c41412095fc43e66c6acceb664a203c}
+
+
+Definition at line 3 of file Menu\-G\-U\-I.\-cpp.
+
+\hypertarget{class_menu_g_u_i_ade7e3f7fb26b4a0befb4cb3e0bf30cee}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!$\sim$\-Menu\-G\-U\-I@{$\sim$\-Menu\-G\-U\-I}}
+\index{$\sim$\-Menu\-G\-U\-I@{$\sim$\-Menu\-G\-U\-I}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{$\sim$\-Menu\-G\-U\-I}]{\setlength{\rightskip}{0pt plus 5cm}Menu\-G\-U\-I\-::$\sim$\-Menu\-G\-U\-I (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_g_u_i_ade7e3f7fb26b4a0befb4cb3e0bf30cee}
+
+
+Definition at line 56 of file Menu\-G\-U\-I.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_menu_g_u_i_ae2a838fa10f38966e49580494057d25c}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!bind\-Texture@{bind\-Texture}}
+\index{bind\-Texture@{bind\-Texture}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{bind\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-G\-U\-I\-::bind\-Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_g_u_i_ae2a838fa10f38966e49580494057d25c}
+
+
+Din cauza faptului ca se genereaza o textura noua de fiecare data cand se intra in meniu, trebuie legata textura noua de fiecare data. 
+
+
+
+Definition at line 60 of file Menu\-G\-U\-I.\-cpp.
+
+\hypertarget{class_menu_g_u_i_a98ea7d1a53b4f583ead229f80b872ff5}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!delete\-Texture@{delete\-Texture}}
+\index{delete\-Texture@{delete\-Texture}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{delete\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-G\-U\-I\-::delete\-Texture (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_g_u_i_a98ea7d1a53b4f583ead229f80b872ff5}
+sterge textura dupa ce nu mai este folosita 
+
+Definition at line 87 of file Menu\-G\-U\-I.\-cpp.
+
+\hypertarget{class_menu_g_u_i_abc57c1997de32e0c17713f9d20728186}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!display@{display}}
+\index{display@{display}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-G\-U\-I\-::display (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_menu_g_u_i_abc57c1997de32e0c17713f9d20728186}
+
+
+deseneaza meniul pe ecran 
+
+
+
+Definition at line 93 of file Menu\-G\-U\-I.\-cpp.
+
+\hypertarget{class_menu_g_u_i_ab86e29450e7bf0ded4f41213658f9291}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!hide@{hide}}
+\index{hide@{hide}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{hide}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-G\-U\-I\-::hide (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_menu_g_u_i_ab86e29450e7bf0ded4f41213658f9291}
+
+
+Ascunde meniul sau mai bine zis impiedica desenarea acestuia pe ecran. 
+
+
+
+Definition at line 53 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_a1a87191bece0e81a6fdbc0ea9fc1b823}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!is\-Visible@{is\-Visible}}
+\index{is\-Visible@{is\-Visible}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{is\-Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Menu\-G\-U\-I\-::is\-Visible (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_menu_g_u_i_a1a87191bece0e81a6fdbc0ea9fc1b823}
+\begin{DoxyReturn}{Returns}
+Returneaza daca sau nu meniul este vizibil 
+\end{DoxyReturn}
+
+
+Definition at line 58 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_ab94886a43e3598ce490116bd06f3c828}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!selective\-Blur@{selective\-Blur}}
+\index{selective\-Blur@{selective\-Blur}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{selective\-Blur}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-G\-U\-I\-::selective\-Blur (
+\begin{DoxyParamCaption}
+\item[{unsigned char $\ast$}]{original\-Img}
+\end{DoxyParamCaption}
+)}}\label{class_menu_g_u_i_ab94886a43e3598ce490116bd06f3c828}
+
+
+Calculeaza efectul imaginii de fundal. 
+
+
+
+Definition at line 137 of file Menu\-G\-U\-I.\-cpp.
+
+\hypertarget{class_menu_g_u_i_ad1fba8bb6d1851e4ab663ca869275162}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!show@{show}}
+\index{show@{show}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{show}]{\setlength{\rightskip}{0pt plus 5cm}void Menu\-G\-U\-I\-::show (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_menu_g_u_i_ad1fba8bb6d1851e4ab663ca869275162}
+
+
+Arata meni-\/ul, cam la fel ca si interfata din Java. 
+
+
+
+Definition at line 43 of file Menu\-G\-U\-I.\-h.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_menu_g_u_i_a5f70990c15a161d6d9e04e436599e59c}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!bkg\-\_\-obj@{bkg\-\_\-obj}}
+\index{bkg\-\_\-obj@{bkg\-\_\-obj}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{bkg\-\_\-obj}]{\setlength{\rightskip}{0pt plus 5cm}{\bf object} Menu\-G\-U\-I\-::bkg\-\_\-obj}}\label{class_menu_g_u_i_a5f70990c15a161d6d9e04e436599e59c}
+
+
+Definition at line 13 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_a2f433c33f8a0e3e6e37b79b6fb0dc57d}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!dialog\-\_\-list@{dialog\-\_\-list}}
+\index{dialog\-\_\-list@{dialog\-\_\-list}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{dialog\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf object}$>$ Menu\-G\-U\-I\-::dialog\-\_\-list}}\label{class_menu_g_u_i_a2f433c33f8a0e3e6e37b79b6fb0dc57d}
+
+
+Definition at line 16 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_a04d8a13b8437fa0ae19d5913f18678e3}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!logo@{logo}}
+\index{logo@{logo}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{logo}]{\setlength{\rightskip}{0pt plus 5cm}{\bf object} Menu\-G\-U\-I\-::logo}}\label{class_menu_g_u_i_a04d8a13b8437fa0ae19d5913f18678e3}
+
+
+Definition at line 14 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_afb740b4478b7214db49bcfb8bca4350d}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!menu\-\_\-list@{menu\-\_\-list}}
+\index{menu\-\_\-list@{menu\-\_\-list}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{menu\-\_\-list}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf object}$>$ Menu\-G\-U\-I\-::menu\-\_\-list}}\label{class_menu_g_u_i_afb740b4478b7214db49bcfb8bca4350d}
+
+
+Definition at line 15 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_a41dee14f0233c0a7159f0601b3016e3a}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!screen\-Height@{screen\-Height}}
+\index{screen\-Height@{screen\-Height}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{screen\-Height}]{\setlength{\rightskip}{0pt plus 5cm}volatile int Menu\-G\-U\-I\-::screen\-Height}}\label{class_menu_g_u_i_a41dee14f0233c0a7159f0601b3016e3a}
+
+
+Definition at line 18 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_a16ac33cf65fbb4ce84e076a71aeb6137}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!screen\-Width@{screen\-Width}}
+\index{screen\-Width@{screen\-Width}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{screen\-Width}]{\setlength{\rightskip}{0pt plus 5cm}volatile int Menu\-G\-U\-I\-::screen\-Width}}\label{class_menu_g_u_i_a16ac33cf65fbb4ce84e076a71aeb6137}
+
+
+Definition at line 18 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_a6e978784cb9e9792dd96d935f9a2d1ca}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!selected@{selected}}
+\index{selected@{selected}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{selected}]{\setlength{\rightskip}{0pt plus 5cm}int Menu\-G\-U\-I\-::selected}}\label{class_menu_g_u_i_a6e978784cb9e9792dd96d935f9a2d1ca}
+
+
+Definition at line 17 of file Menu\-G\-U\-I.\-h.
+
+\hypertarget{class_menu_g_u_i_aeb5b730a3faea08895e234e1ad9ab53d}{\index{Menu\-G\-U\-I@{Menu\-G\-U\-I}!visible@{visible}}
+\index{visible@{visible}!MenuGUI@{Menu\-G\-U\-I}}
+\subsubsection[{visible}]{\setlength{\rightskip}{0pt plus 5cm}bool Menu\-G\-U\-I\-::visible}}\label{class_menu_g_u_i_aeb5b730a3faea08895e234e1ad9ab53d}
+
+
+Definition at line 19 of file Menu\-G\-U\-I.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_menu_g_u_i_8h}{Menu\-G\-U\-I.\-h}\item 
+\hyperlink{_menu_g_u_i_8cpp}{Menu\-G\-U\-I.\-cpp}\end{DoxyCompactItemize}

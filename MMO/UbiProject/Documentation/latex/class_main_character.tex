@@ -1,0 +1,234 @@
+\hypertarget{class_main_character}{\section{Main\-Character Class Reference}
+\label{class_main_character}\index{Main\-Character@{Main\-Character}}
+}
+
+
+{\ttfamily \#include $<$static\-Obj.\-h$>$}
+
+Inheritance diagram for Main\-Character\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_main_character}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_main_character_ad9fb34855d2ba64910e20410c8e0c6ec}{Main\-Character} (const char $\ast$filename, \hyperlink{class_camera}{Camera} $\ast$\hyperlink{class_main_character_aed23e5d05c1fb771c303d4f3e180aa66}{camera})
+\begin{DoxyCompactList}\small\item\em Constructor hardcodat -\/ T\-O\-D\-O generalizare. \end{DoxyCompactList}\item 
+\hyperlink{class_main_character_a6d7d97ce443fa977a798ea1c956b0fc1}{$\sim$\-Main\-Character} ()
+\item 
+virtual void \hyperlink{class_main_character_adf0f10646b7e00949b7a594cbc161c64}{render} (std\-::vector$<$ \hyperlink{structobject}{object} $>$ \&comp, float $\ast$buffer, float $\ast$restore\-\_\-buffer)
+\begin{DoxyCompactList}\small\item\em deseneaza personajul animat \end{DoxyCompactList}\item 
+void \hyperlink{class_main_character_a5f57b318af6b7919ad7594603a35750c}{reset} ()
+\begin{DoxyCompactList}\small\item\em reseteaza pozitia, rotatia personajului la cele initiale \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_main_character_aa5ae776c23b6f09beae33ac3ad015add}{save\-State} ()
+\begin{DoxyCompactList}\small\item\em Uncompleted -\/ T\-O\-D\-O. \end{DoxyCompactList}\item 
+virtual void \hyperlink{class_main_character_ad37c1d914626650e7d77b9d8ae58b4a5}{load\-State} ()
+\begin{DoxyCompactList}\small\item\em Salveaza starea curenta a jocului. \end{DoxyCompactList}\item 
+virtual float $\ast$ \hyperlink{class_main_character_a2615c112f8784972fa57b0c585a52ca8}{wrap\-Bounding\-Box} (\hyperlink{struct_vector3}{Vector3} \&request\-\_\-poz, int \&inx, int id)
+\begin{DoxyCompactList}\small\item\em Transforma bounding-\/box-\/ul intr-\/un vector de float-\/uri. A se vedea protocolul client-\/ server. \end{DoxyCompactList}\item 
+void \hyperlink{class_main_character_a8664ab320c6d2e258143119a03b7458f}{resolve\-\_\-collision} (float $\ast$wanted\-\_\-pos, float $\ast$results)
+\begin{DoxyCompactList}\small\item\em ajusteaza pozitia personajului dupa rezultatele coliziunii -\/ uncompleted T\-O\-D\-O \end{DoxyCompactList}\item 
+void \hyperlink{class_main_character_a0886ea364317c67aa139d6f3d25d69b5}{send\-Buffers} (float $\ast$buffer\-\_\-wanted, float $\ast$buffer\-\_\-restore)
+\begin{DoxyCompactList}\small\item\em Trimite buffer-\/ul cu bounding-\/box-\/ul spre server. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera}{Camera} $\ast$ \hyperlink{class_main_character_aed23e5d05c1fb771c303d4f3e180aa66}{camera}
+\item 
+\hyperlink{struct_vector3}{Vector3} \hyperlink{class_main_character_ad8584e16c6e3f1b599fe9fad7511b14f}{position}
+\item 
+float \hyperlink{class_main_character_aa84b9f2c698f1247c8d95a60105cdbb7}{orientation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 124 of file static\-Obj.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_main_character_ad9fb34855d2ba64910e20410c8e0c6ec}{\index{Main\-Character@{Main\-Character}!Main\-Character@{Main\-Character}}
+\index{Main\-Character@{Main\-Character}!MainCharacter@{Main\-Character}}
+\subsubsection[{Main\-Character}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Character\-::\-Main\-Character (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{filename, }
+\item[{{\bf Camera} $\ast$}]{camera}
+\end{DoxyParamCaption}
+)}}\label{class_main_character_ad9fb34855d2ba64910e20410c8e0c6ec}
+
+
+Constructor hardcodat -\/ T\-O\-D\-O generalizare. 
+
+
+
+Definition at line 349 of file static\-Obj.\-cpp.
+
+\hypertarget{class_main_character_a6d7d97ce443fa977a798ea1c956b0fc1}{\index{Main\-Character@{Main\-Character}!$\sim$\-Main\-Character@{$\sim$\-Main\-Character}}
+\index{$\sim$\-Main\-Character@{$\sim$\-Main\-Character}!MainCharacter@{Main\-Character}}
+\subsubsection[{$\sim$\-Main\-Character}]{\setlength{\rightskip}{0pt plus 5cm}Main\-Character\-::$\sim$\-Main\-Character (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_character_a6d7d97ce443fa977a798ea1c956b0fc1}
+
+
+Definition at line 364 of file static\-Obj.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_main_character_ad37c1d914626650e7d77b9d8ae58b4a5}{\index{Main\-Character@{Main\-Character}!load\-State@{load\-State}}
+\index{load\-State@{load\-State}!MainCharacter@{Main\-Character}}
+\subsubsection[{load\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Character\-::load\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_main_character_ad37c1d914626650e7d77b9d8ae58b4a5}
+
+
+Salveaza starea curenta a jocului. 
+
+
+
+Definition at line 495 of file static\-Obj.\-cpp.
+
+\hypertarget{class_main_character_adf0f10646b7e00949b7a594cbc161c64}{\index{Main\-Character@{Main\-Character}!render@{render}}
+\index{render@{render}!MainCharacter@{Main\-Character}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Character\-::render (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf object} $>$ \&}]{comp, }
+\item[{float $\ast$}]{buffer, }
+\item[{float $\ast$}]{restore\-\_\-buffer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_main_character_adf0f10646b7e00949b7a594cbc161c64}
+
+
+deseneaza personajul animat 
+
+
+
+Reimplemented from \hyperlink{class_mesh_animation_ae64ddb4d27ebb9d64fe11b2e3143754e}{Mesh\-Animation}.
+
+
+
+Definition at line 368 of file static\-Obj.\-cpp.
+
+\hypertarget{class_main_character_a5f57b318af6b7919ad7594603a35750c}{\index{Main\-Character@{Main\-Character}!reset@{reset}}
+\index{reset@{reset}!MainCharacter@{Main\-Character}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Character\-::reset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_main_character_a5f57b318af6b7919ad7594603a35750c}
+
+
+reseteaza pozitia, rotatia personajului la cele initiale 
+
+
+
+Definition at line 468 of file static\-Obj.\-cpp.
+
+\hypertarget{class_main_character_a8664ab320c6d2e258143119a03b7458f}{\index{Main\-Character@{Main\-Character}!resolve\-\_\-collision@{resolve\-\_\-collision}}
+\index{resolve\-\_\-collision@{resolve\-\_\-collision}!MainCharacter@{Main\-Character}}
+\subsubsection[{resolve\-\_\-collision}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Character\-::resolve\-\_\-collision (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{wanted\-\_\-pos, }
+\item[{float $\ast$}]{results}
+\end{DoxyParamCaption}
+)}}\label{class_main_character_a8664ab320c6d2e258143119a03b7458f}
+
+
+ajusteaza pozitia personajului dupa rezultatele coliziunii -\/ uncompleted T\-O\-D\-O 
+
+
+
+Definition at line 395 of file static\-Obj.\-cpp.
+
+\hypertarget{class_main_character_aa5ae776c23b6f09beae33ac3ad015add}{\index{Main\-Character@{Main\-Character}!save\-State@{save\-State}}
+\index{save\-State@{save\-State}!MainCharacter@{Main\-Character}}
+\subsubsection[{save\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Character\-::save\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_main_character_aa5ae776c23b6f09beae33ac3ad015add}
+
+
+Uncompleted -\/ T\-O\-D\-O. 
+
+
+
+Definition at line 476 of file static\-Obj.\-cpp.
+
+\hypertarget{class_main_character_a0886ea364317c67aa139d6f3d25d69b5}{\index{Main\-Character@{Main\-Character}!send\-Buffers@{send\-Buffers}}
+\index{send\-Buffers@{send\-Buffers}!MainCharacter@{Main\-Character}}
+\subsubsection[{send\-Buffers}]{\setlength{\rightskip}{0pt plus 5cm}void Main\-Character\-::send\-Buffers (
+\begin{DoxyParamCaption}
+\item[{float $\ast$}]{buffer\-\_\-wanted, }
+\item[{float $\ast$}]{buffer\-\_\-restore}
+\end{DoxyParamCaption}
+)}}\label{class_main_character_a0886ea364317c67aa139d6f3d25d69b5}
+
+
+Trimite buffer-\/ul cu bounding-\/box-\/ul spre server. 
+
+\hypertarget{class_main_character_a2615c112f8784972fa57b0c585a52ca8}{\index{Main\-Character@{Main\-Character}!wrap\-Bounding\-Box@{wrap\-Bounding\-Box}}
+\index{wrap\-Bounding\-Box@{wrap\-Bounding\-Box}!MainCharacter@{Main\-Character}}
+\subsubsection[{wrap\-Bounding\-Box}]{\setlength{\rightskip}{0pt plus 5cm}float $\ast$ Main\-Character\-::wrap\-Bounding\-Box (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3} \&}]{request\-\_\-poz, }
+\item[{int \&}]{inx, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_main_character_a2615c112f8784972fa57b0c585a52ca8}
+
+
+Transforma bounding-\/box-\/ul intr-\/un vector de float-\/uri. A se vedea protocolul client-\/ server. 
+
+
+
+Definition at line 434 of file static\-Obj.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_main_character_aed23e5d05c1fb771c303d4f3e180aa66}{\index{Main\-Character@{Main\-Character}!camera@{camera}}
+\index{camera@{camera}!MainCharacter@{Main\-Character}}
+\subsubsection[{camera}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera}$\ast$ Main\-Character\-::camera}}\label{class_main_character_aed23e5d05c1fb771c303d4f3e180aa66}
+
+
+Definition at line 126 of file static\-Obj.\-h.
+
+\hypertarget{class_main_character_aa84b9f2c698f1247c8d95a60105cdbb7}{\index{Main\-Character@{Main\-Character}!orientation@{orientation}}
+\index{orientation@{orientation}!MainCharacter@{Main\-Character}}
+\subsubsection[{orientation}]{\setlength{\rightskip}{0pt plus 5cm}float Main\-Character\-::orientation}}\label{class_main_character_aa84b9f2c698f1247c8d95a60105cdbb7}
+
+\begin{DoxyParams}{Parameters}
+{\em orientation} & -\/ unghiul in jurul axei y \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 134 of file static\-Obj.\-h.
+
+\hypertarget{class_main_character_ad8584e16c6e3f1b599fe9fad7511b14f}{\index{Main\-Character@{Main\-Character}!position@{position}}
+\index{position@{position}!MainCharacter@{Main\-Character}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3} Main\-Character\-::position}}\label{class_main_character_ad8584e16c6e3f1b599fe9fad7511b14f}
+
+\begin{DoxyParams}{Parameters}
+{\em -\/} & position pozitia la care se afla personajul \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 130 of file static\-Obj.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{static_obj_8h}{static\-Obj.\-h}\item 
+\hyperlink{static_obj_8cpp}{static\-Obj.\-cpp}\end{DoxyCompactItemize}

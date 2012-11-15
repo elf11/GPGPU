@@ -1,0 +1,109 @@
+\hypertarget{struct_face}{\section{Face Struct Reference}
+\label{struct_face}\index{Face@{Face}}
+}
+
+
+{\ttfamily \#include $<$Comp\-Core.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_face_afdb634bc2d5287ba0d62e46b57e9dc2e}{Face} ()
+\item 
+\hyperlink{struct_face_aed1b0ad8fc9cbd75ed4d1423a9615a9e}{Face} (\hyperlink{struct_vector3_int}{Vector3\-Int} \hyperlink{struct_face_a0425ff83722a4bd41c020f480a6fc8fe}{v}, \hyperlink{struct_vector3_int}{Vector3\-Int} \hyperlink{struct_face_ac37801a984b6845429c0d73ad836d551}{uv}, \hyperlink{struct_vector3_int}{Vector3\-Int} \hyperlink{struct_face_a89627fa35380d411e31d45e8bf7a03ac}{n})
+\item 
+\hyperlink{struct_face_a182c8c9ba652d46b01fdf6816cd65590}{$\sim$\-Face} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_vector3_int}{Vector3\-Int} \hyperlink{struct_face_a0425ff83722a4bd41c020f480a6fc8fe}{v}
+\item 
+\hyperlink{struct_vector3_int}{Vector3\-Int} \hyperlink{struct_face_ac37801a984b6845429c0d73ad836d551}{uv}
+\item 
+\hyperlink{struct_vector3_int}{Vector3\-Int} \hyperlink{struct_face_a89627fa35380d411e31d45e8bf7a03ac}{n}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+fata triunghiulara 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ Indexele vertecsilor dintr-\/un vector in care sunt pastrati vertecsii \\
+\hline
+{\em uv} & -\/ indecsi spre vectorul cu coordonatele texturii pentru fiecare vertex \\
+\hline
+{\em n} & -\/ indecsi spre vectorul cu normalele\\
+\hline
+\end{DoxyParams}
+Initial Desenarea se facea de pe C\-P\-U, foloseam aceasta clasa ca sa consum mai putina memorie, o data cu trecerea la V\-B\-O aceasta structura a devenit deprecated pentru scopul pentru care a fost conceputa, insa poate fi utila in alte situatii 
+
+Definition at line 155 of file Comp\-Core.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{struct_face_afdb634bc2d5287ba0d62e46b57e9dc2e}{\index{Face@{Face}!Face@{Face}}
+\index{Face@{Face}!Face@{Face}}
+\subsubsection[{Face}]{\setlength{\rightskip}{0pt plus 5cm}Face\-::\-Face (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_face_afdb634bc2d5287ba0d62e46b57e9dc2e}
+
+
+Definition at line 164 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_face_aed1b0ad8fc9cbd75ed4d1423a9615a9e}{\index{Face@{Face}!Face@{Face}}
+\index{Face@{Face}!Face@{Face}}
+\subsubsection[{Face}]{\setlength{\rightskip}{0pt plus 5cm}Face\-::\-Face (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector3\-Int}}]{v, }
+\item[{{\bf Vector3\-Int}}]{uv, }
+\item[{{\bf Vector3\-Int}}]{n}
+\end{DoxyParamCaption}
+)}}\label{struct_face_aed1b0ad8fc9cbd75ed4d1423a9615a9e}
+
+
+Definition at line 168 of file Comp\-Core.\-cpp.
+
+\hypertarget{struct_face_a182c8c9ba652d46b01fdf6816cd65590}{\index{Face@{Face}!$\sim$\-Face@{$\sim$\-Face}}
+\index{$\sim$\-Face@{$\sim$\-Face}!Face@{Face}}
+\subsubsection[{$\sim$\-Face}]{\setlength{\rightskip}{0pt plus 5cm}Face\-::$\sim$\-Face (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{struct_face_a182c8c9ba652d46b01fdf6816cd65590}
+
+
+Definition at line 175 of file Comp\-Core.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{struct_face_a89627fa35380d411e31d45e8bf7a03ac}{\index{Face@{Face}!n@{n}}
+\index{n@{n}!Face@{Face}}
+\subsubsection[{n}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-Int} Face\-::n}}\label{struct_face_a89627fa35380d411e31d45e8bf7a03ac}
+
+
+Definition at line 156 of file Comp\-Core.\-h.
+
+\hypertarget{struct_face_ac37801a984b6845429c0d73ad836d551}{\index{Face@{Face}!uv@{uv}}
+\index{uv@{uv}!Face@{Face}}
+\subsubsection[{uv}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-Int} Face\-::uv}}\label{struct_face_ac37801a984b6845429c0d73ad836d551}
+
+
+Definition at line 156 of file Comp\-Core.\-h.
+
+\hypertarget{struct_face_a0425ff83722a4bd41c020f480a6fc8fe}{\index{Face@{Face}!v@{v}}
+\index{v@{v}!Face@{Face}}
+\subsubsection[{v}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector3\-Int} Face\-::v}}\label{struct_face_a0425ff83722a4bd41c020f480a6fc8fe}
+
+
+Definition at line 156 of file Comp\-Core.\-h.
+
+
+
+The documentation for this struct was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_comp_core_8h}{Comp\-Core.\-h}\item 
+\hyperlink{_comp_core_8cpp}{Comp\-Core.\-cpp}\end{DoxyCompactItemize}

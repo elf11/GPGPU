@@ -1,0 +1,4 @@
+lines=33
+columns=49
+lineStep=31.250000
+columnStep=25.000000

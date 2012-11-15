@@ -1,0 +1,199 @@
+\hypertarget{class_static_obj}{\section{Static\-Obj Class Reference}
+\label{class_static_obj}\index{Static\-Obj@{Static\-Obj}}
+}
+
+
+{\ttfamily \#include $<$static\-Obj.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_static_obj_adedc6727f2488cc926eb10ceaf7bce24}{Static\-Obj} (const char $\ast$obj\-File)
+\item 
+\hyperlink{class_static_obj_a0e9ad78e77930dd179a61892c101c7c7}{$\sim$\-Static\-Obj} ()
+\item 
+void \hyperlink{class_static_obj_a2bdd72e3c2edf70d8548f3a7ac86f91b}{draw\-All\-Objects} ()
+\begin{DoxyCompactList}\small\item\em Deseneaza toate obiectele statice. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_static_obj_a6216559c49acd38e5907f31477a1a766}{read\-Obj} (char $\ast$filename, \hyperlink{structobject}{object} \&comp)
+\begin{DoxyCompactList}\small\item\em citeste in \end{DoxyCompactList}\item 
+static void \hyperlink{class_static_obj_ab313f0fbec00b84e213d768fc48bec16}{load\-Texture} (char $\ast$filename, \hyperlink{structobject}{object} \&comp)
+\item 
+static void \hyperlink{class_static_obj_aff189588cac999afa0c5df1481d1b2d6}{draw\-Sky} ()
+\begin{DoxyCompactList}\small\item\em Deseneaza sky-\/box-\/ul care este o semisfera, nu este desenat folosind metoda pentru obiecte normale deoarece locatia variaza neperiodic. \end{DoxyCompactList}\item 
+static void \hyperlink{class_static_obj_a5eb942a526132f44ca7318bfcafbfd1c}{draw\-Object} (\hyperlink{structobject}{object} \&comp)
+\begin{DoxyCompactList}\small\item\em Deseneaza obiectul static. \end{DoxyCompactList}\item 
+static void \hyperlink{class_static_obj_ae7e5cc75f69f16475c1a5215fe3d1509}{set\-Object\-Id} (\hyperlink{structobject}{object} \&comp)
+\begin{DoxyCompactList}\small\item\em Creeaza vertex buffer object si indices buffer object pe care ii incarca in memoria G\-P\-U, si seteaza id-\/urile din clasa object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ \hyperlink{structobject}{object} $>$ \hyperlink{class_static_obj_a926bfb30d4479a9fc6eb2fe3eeadbabc}{components}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+obiectele statice din scena sau care se comporta periodic 
+
+Definition at line 23 of file static\-Obj.\-h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_static_obj_adedc6727f2488cc926eb10ceaf7bce24}{\index{Static\-Obj@{Static\-Obj}!Static\-Obj@{Static\-Obj}}
+\index{Static\-Obj@{Static\-Obj}!StaticObj@{Static\-Obj}}
+\subsubsection[{Static\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}Static\-Obj\-::\-Static\-Obj (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{obj\-File}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{class_static_obj_adedc6727f2488cc926eb10ceaf7bce24}
+
+\begin{DoxyParams}{Parameters}
+{\em obj\-File} & este numele fisierului de configuare A se vedea formatul fisierelor \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 10 of file static\-Obj.\-cpp.
+
+\hypertarget{class_static_obj_a0e9ad78e77930dd179a61892c101c7c7}{\index{Static\-Obj@{Static\-Obj}!$\sim$\-Static\-Obj@{$\sim$\-Static\-Obj}}
+\index{$\sim$\-Static\-Obj@{$\sim$\-Static\-Obj}!StaticObj@{Static\-Obj}}
+\subsubsection[{$\sim$\-Static\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}Static\-Obj\-::$\sim$\-Static\-Obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_static_obj_a0e9ad78e77930dd179a61892c101c7c7}
+
+
+Definition at line 83 of file static\-Obj.\-cpp.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_static_obj_a2bdd72e3c2edf70d8548f3a7ac86f91b}{\index{Static\-Obj@{Static\-Obj}!draw\-All\-Objects@{draw\-All\-Objects}}
+\index{draw\-All\-Objects@{draw\-All\-Objects}!StaticObj@{Static\-Obj}}
+\subsubsection[{draw\-All\-Objects}]{\setlength{\rightskip}{0pt plus 5cm}void Static\-Obj\-::draw\-All\-Objects (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_static_obj_a2bdd72e3c2edf70d8548f3a7ac86f91b}
+
+
+Deseneaza toate obiectele statice. 
+
+
+
+Definition at line 208 of file static\-Obj.\-cpp.
+
+\hypertarget{class_static_obj_a5eb942a526132f44ca7318bfcafbfd1c}{\index{Static\-Obj@{Static\-Obj}!draw\-Object@{draw\-Object}}
+\index{draw\-Object@{draw\-Object}!StaticObj@{Static\-Obj}}
+\subsubsection[{draw\-Object}]{\setlength{\rightskip}{0pt plus 5cm}void Static\-Obj\-::draw\-Object (
+\begin{DoxyParamCaption}
+\item[{{\bf object} \&}]{comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_static_obj_a5eb942a526132f44ca7318bfcafbfd1c}
+
+
+Deseneaza obiectul static. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 285 of file static\-Obj.\-cpp.
+
+\hypertarget{class_static_obj_aff189588cac999afa0c5df1481d1b2d6}{\index{Static\-Obj@{Static\-Obj}!draw\-Sky@{draw\-Sky}}
+\index{draw\-Sky@{draw\-Sky}!StaticObj@{Static\-Obj}}
+\subsubsection[{draw\-Sky}]{\setlength{\rightskip}{0pt plus 5cm}void Static\-Obj\-::draw\-Sky (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_static_obj_aff189588cac999afa0c5df1481d1b2d6}
+
+
+Deseneaza sky-\/box-\/ul care este o semisfera, nu este desenat folosind metoda pentru obiecte normale deoarece locatia variaza neperiodic. 
+
+
+
+Definition at line 197 of file static\-Obj.\-cpp.
+
+\hypertarget{class_static_obj_ab313f0fbec00b84e213d768fc48bec16}{\index{Static\-Obj@{Static\-Obj}!load\-Texture@{load\-Texture}}
+\index{load\-Texture@{load\-Texture}!StaticObj@{Static\-Obj}}
+\subsubsection[{load\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}void Static\-Obj\-::load\-Texture (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename, }
+\item[{{\bf object} \&}]{comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_static_obj_ab313f0fbec00b84e213d768fc48bec16}
+
+\begin{DoxyParams}{Parameters}
+{\em incarca} & textura in format T\-G\-A 4\-B necompresata de la adresa \\
+\hline
+{\em filename} & in biectul \\
+\hline
+{\em comp} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 168 of file static\-Obj.\-cpp.
+
+\hypertarget{class_static_obj_a6216559c49acd38e5907f31477a1a766}{\index{Static\-Obj@{Static\-Obj}!read\-Obj@{read\-Obj}}
+\index{read\-Obj@{read\-Obj}!StaticObj@{Static\-Obj}}
+\subsubsection[{read\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void Static\-Obj\-::read\-Obj (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{filename, }
+\item[{{\bf object} \&}]{comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_static_obj_a6216559c49acd38e5907f31477a1a766}
+
+
+citeste in 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp,obiectul} & de tip.\-obj cde la adresa \\
+\hline
+{\em filename} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 87 of file static\-Obj.\-cpp.
+
+\hypertarget{class_static_obj_ae7e5cc75f69f16475c1a5215fe3d1509}{\index{Static\-Obj@{Static\-Obj}!set\-Object\-Id@{set\-Object\-Id}}
+\index{set\-Object\-Id@{set\-Object\-Id}!StaticObj@{Static\-Obj}}
+\subsubsection[{set\-Object\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void Static\-Obj\-::set\-Object\-Id (
+\begin{DoxyParamCaption}
+\item[{{\bf object} \&}]{comp}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_static_obj_ae7e5cc75f69f16475c1a5215fe3d1509}
+
+
+Creeaza vertex buffer object si indices buffer object pe care ii incarca in memoria G\-P\-U, si seteaza id-\/urile din clasa object. 
+
+
+
+Definition at line 121 of file static\-Obj.\-cpp.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_static_obj_a926bfb30d4479a9fc6eb2fe3eeadbabc}{\index{Static\-Obj@{Static\-Obj}!components@{components}}
+\index{components@{components}!StaticObj@{Static\-Obj}}
+\subsubsection[{components}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<${\bf object}$>$ Static\-Obj\-::components}}\label{class_static_obj_a926bfb30d4479a9fc6eb2fe3eeadbabc}
+
+
+Definition at line 25 of file static\-Obj.\-h.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{static_obj_8h}{static\-Obj.\-h}\item 
+\hyperlink{static_obj_8cpp}{static\-Obj.\-cpp}\end{DoxyCompactItemize}
